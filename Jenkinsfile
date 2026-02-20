@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-Choco'
+        maven 'Maven-Choco' // ou le nom exact dans Jenkins
     }
 
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
     }
