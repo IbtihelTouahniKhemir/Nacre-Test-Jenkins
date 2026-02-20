@@ -2,33 +2,53 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-Choco'  // Remplace par le nom exact de ton Maven dans Jenkins
+        maven 'Maven-Choco'   // Nom exact de Maven configuré dans Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
-                // Jenkins va automatiquement faire le git checkout
-                echo 'Checkout du code depuis GitLab'
+                checkout scm
+                echo 'Code récupéré depuis GitHub'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'mvn clean package'  // Windows : compile et package le projet Maven
+                bat 'mvn clean package'
+                echo 'Build Maven terminé'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'mvn test'  // Exécute les tests
+                bat 'mvn test'
+            }
+            post {
+                success {
+                    echo '✅ Tous les tests sont passés'
+                }
+                failure {
+                    echo '❌ Certains tests ont échoué !'
+                    error('Arrêt du pipeline : tests échoués')
+                }
             }
         }
 
         stage('Archive') {
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+                echo 'Artefacts archivés'
             }
+        }
+    }
+
+    post {
+        success {
+            echo '🎉Build complet et réussi !'
+        }
+        failure {
+            echo '😢 Build échoué'
         }
     }
 }
