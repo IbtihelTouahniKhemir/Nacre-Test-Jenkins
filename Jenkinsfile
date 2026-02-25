@@ -20,13 +20,12 @@ pipeline {
                 echo '✅ Build réussi'
             }
         }
-
-        stage('Archive P2 Repository') {
-            steps {
-                archiveArtifacts artifacts: 'releng/p2/target/repository/**', fingerprint: true
-                echo '✅ Repository p2 archivé'
-            }
-        }
+stage('Test') {
+    steps {
+        bat 'mvn test'
+    }
+}
+        
     }
 
     post {
