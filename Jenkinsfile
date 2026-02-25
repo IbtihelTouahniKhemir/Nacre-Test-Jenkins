@@ -9,20 +9,37 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout scm
-                echo 'Code récupéré'
+                echo '✅ Code récupéré'
+            }
+        }
+
+        stage('Check Java & Maven') {
+            steps {
+                bat 'java -version'
+                bat 'echo %JAVA_HOME%'
+                bat 'mvn -version'
+            }
+        }
+
+        stage('Test Maven Central') {
+            steps {
+                bat 'curl -I https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.71.1/bcprov-jdk18on-1.71.1.pom || echo "⚠️ Impossible d’accéder à Maven Central"'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'mvn clean package'
-                echo 'Build Maven terminé'
+                // -U force la mise à jour de toutes les dépendances
+                // -e affiche les erreurs complètes
+                // -X mode debug pour voir exactement quel artefact pose problème
+                bat 'mvn clean package -U -e -X'
+                echo '✅ Build Maven terminé'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'mvn test -U -e'
             }
             post {
                 success {
@@ -38,14 +55,14 @@ pipeline {
         stage('Archive') {
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-                echo 'Artefacts archivés'
+                echo '✅ Artefacts archivés'
             }
         }
     }
 
     post {
         success {
-            echo '🎉Build complet et réussi !'
+            echo '🎉 Build complet et réussi !'
         }
         failure {
             echo '😢 Build échoué'
