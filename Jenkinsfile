@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-Choco'   // Nom exact de Maven configuré dans Jenkins
+        maven 'Maven-Choco'
     }
 
     stages {
+
         stage('Checkout') {
             steps {
                 checkout scm
@@ -13,71 +14,27 @@ pipeline {
             }
         }
 
-        stage('Check Java & Maven') {
-            steps {
-                bat 'java -version'
-                bat 'echo %JAVA_HOME%'
-                bat 'mvn -version'
-            }
-        }
-
-        stage('Test Maven Central') {
-            steps {
-                bat 'curl -I https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/1.71.1/bcprov-jdk18on-1.71.1.pom || echo "⚠️ Impossible d’accéder à Maven Central"'
-            }
-        }
-
         stage('Build') {
             steps {
-                // -U force la mise à jour de toutes les dépendances
-                // -e affiche les erreurs complètes
-                // -X mode debug pour voir exactement quel artefact pose problème
-                bat 'mvn clean package -U -e -X'
-                echo '✅ Build Maven terminé'
+                bat 'mvn clean verify -U'
+                echo '✅ Build réussi'
             }
         }
 
-        stage('Test') {
+        stage('Archive P2 Repository') {
             steps {
-                bat 'mvn test -U -e'
-            }
-            post {
-                success {
-                    echo '✅ Tous les tests sont passés'
-                }
-                failure {
-                    echo '❌ Certains tests ont échoué !'
-                    error('Arrêt du pipeline : tests échoués')
-                }
+                archiveArtifacts artifacts: 'releng/p2/target/repository/**', fingerprint: true
+                echo '✅ Repository p2 archivé'
             }
         }
-stage('Archive') {
-    steps {
-        archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
-        echo '✅ Artefacts archivés'
-    }
-}
-stage('Debug') {
-    steps {
-        bat 'dir /s /b *.jar'
-    }
-}
-       
-       stage('Debug Files') {
-    steps {
-        bat 'dir /s plugins\\*\\target'
-        bat 'dir /s features\\*\\target'
-    }
-}
-        
     }
 
     post {
         success {
-            echo '🎉 Build complet et réussi !'
+            echo '🎉 BUILD SUCCESS'
         }
         failure {
-            echo '😢 Build échoué'
+            echo '❌ BUILD FAILED'
         }
     }
 }
