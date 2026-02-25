@@ -51,7 +51,17 @@ pipeline {
                 }
             }
         }
-
+stage('Archive') {
+    steps {
+        archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+        echo '✅ Artefacts archivés'
+    }
+}
+stage('Debug') {
+    steps {
+        bat 'dir /s /b *.jar'
+    }
+}
        
        stage('Debug Files') {
     steps {
