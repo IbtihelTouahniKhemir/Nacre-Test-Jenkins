@@ -1,0 +1,83 @@
+Class {
+	maskLabel: name;
+	elementIcon: false;
+}
+*[appliedStereotypes~="nacre::Link"] {
+	TargetDecoration: none;
+
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::ComputingResource"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::ComputingResource"] {
+	fillColor: #A6C198;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::ComputingResource"][appliedStereotypes~="hazards::CommunicationHazard"] {
+	fillColor: #B22222;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+
+Abstraction[appliedStereotypes~="hazards::CommunicationHazard"] {
+	lineColor: #B22222;
+	lineWidth: 3;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::CommunicationMedia"] {
+	
+	displayStereotypes: false;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/network.svg";
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::CommunicationMedia"][appliedStereotypes~="hazards::CommunicationHazard"] {
+	fillColor: #B22222;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::CommunicationMedia"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+
+
+
+Class[appliedStereotypes~="MARTE::MARTE_DesignModel::SRM::SW_Concurrency::SwSchedulableResource"] {
+	fillColor: #FFA500;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_DesignModel::SRM::SW_Concurrency::SwSchedulableResource"][appliedStereotypes~="hazards::CommunicationHazard"] {
+	fillColor: #B22222;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_DesignModel::SRM::SW_Concurrency::SwSchedulableResource"] > Compartment[kind="symbol"] {
+	visible: false;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+*[appliedStereotypes~="nacre::Link"] {
+	TargetDecoration: none;
+
+}
+
+Abstraction > Label {
+    visible: false;
+}
+
+

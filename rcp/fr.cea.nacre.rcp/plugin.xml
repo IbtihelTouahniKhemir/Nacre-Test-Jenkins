@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.3"?>
+<plugin>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            description="NACRE&#x0D;&#x0A;&#x0D;&#x0A;Version: {1}&#x0D;&#x0A;&#x0D;&#x0A;"
+            name="NACRE">
+         <property name="windowImages" value="icons/papyrus16.png,icons/papyrus32.png,icons/papyrus48.png,icons/papyrus64.png,icons/papyrus128.png"/> 
+         <property name="aboutImage" value="icons/papyrus_lg.png"/>
+         <property
+               name="appName"
+               value="NACRE">
+         </property>
+         <property
+              name="introBrandingImage"
+              value="product:icons/intro-papyrus.png"/>
+         <property
+               name="introTitle"
+               value="Welcome to NACRE">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="NACRE">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="9C9E9F">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,4,445,16">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="0,330,460,20">
+         </property>
+         <property
+				name="cssTheme"
+				value="org.eclipse.e4.ui.css.theme.e4_default">
+		  </property>
+		  <property
+				name="applicationCSSResources"
+          value="platform:/plugin/org.eclipse.platform/images/">
+		  </property>
+    <property
+          name="aboutText"
+          value="NACRE&#x0A;&#x0A;Version: {1}&#x0A;Build id: {0}&#x0A;&#x0A;">
+    </property>
+    <property
+          name="preferenceCustomization"
+          value="plugin_customization.ini">
+    </property>
+      </product>
+   </extension>
+</plugin>

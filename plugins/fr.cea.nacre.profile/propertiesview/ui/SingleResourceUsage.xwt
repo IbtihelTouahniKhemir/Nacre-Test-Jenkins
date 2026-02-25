@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><Group xmlns="http://www.eclipse.org/xwt/presentation" xmlns:j="clr-namespace:java.lang" xmlns:ppe="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets" xmlns:ppel="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets.layout" xmlns:x="http://www.eclipse.org/xwt" text="ResourceUsage and SchedulableResource">
+            <Group.layout>
+                        <ppel:PropertiesLayout/>
+            </Group.layout>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout/>
+                        </Composite.layout>
+                        <ppe:StringEditor input="{Binding}" property="UML:NamedElement:name"/>
+                        <ppe:StringEditor input="{Binding}" property="MARTE:MARTE_DesignModel:SRM:SW_Concurrency:SwConcurrentResource:type" customLabel="Activation period "/>
+                        <ppe:MultiString input="{Binding}" property="MARTE:MARTE_Foundations:GRM:ResourceUsage:execTime" customLabel="Execution delay "/>
+            </Composite>
+</Group>

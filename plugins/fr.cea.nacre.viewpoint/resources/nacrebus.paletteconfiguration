@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="fr.cea.nacre.palette" label="Zone Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" label="Control">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.localcontroller" label="LocalControl" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="fr.cea.nacre.viewpoint" iconPath="/icons/controller.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_ONuygKJ8Ee2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_ONvZkKJ8Ee2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_ONvZkaJ8Ee2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_ONvZkqJ8Ee2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_ONvZk6J8Ee2NCtCxKZJjQg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.control" label="Control" kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Abstraction.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_eT35MKKIEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_bgDtwKKIEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_EaXkkKKIEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <requiredProfiles>nacre</requiredProfiles>
+</paletteconfiguration:PaletteConfiguration>

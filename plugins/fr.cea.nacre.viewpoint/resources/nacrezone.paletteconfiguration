@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="fr.cea.nacre.palette" label="Zone Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Zone" label="Zone">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.substation" label="Substation" description="Create new Substation" kind="CreationTool" toolClassName="">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="fr.cea.nacre.viewpoint" iconPath="/icons/substation.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_r9u98KKEEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_r9u98aKEEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_r9u98qKEEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_r9vlAKKEEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_r9vlAaKEEe2NCtCxKZJjQg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.bus" label="Bus" description="Create a new Bus" kind="CreationTool" toolClassName="">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Class.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_JIkAIKLXEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_JIknMKLXEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_JIknMaLXEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_JIlOQKLXEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_JIlOQaLXEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.generator" label="Generator" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Class.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_MSa3kKLYEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.battery" label="Battery" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Class.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_AKyIoKLeEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="composite.tool.rte_installation" label="RTE Installation" description="Create new RTE_Installation" kind="CreationTool" toolClassName="">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Class.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_JYjfwKLeEe2bgpIvWHG5sg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <requiredProfiles>nacre</requiredProfiles>
+</paletteconfiguration:PaletteConfiguration>

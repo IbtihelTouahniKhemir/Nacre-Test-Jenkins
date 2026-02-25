@@ -1,0 +1,75 @@
+
+Class {
+	maskLabel: name;
+	elementIcon: false;
+}
+
+Class[appliedStereotypes~="nacre::LocalController"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::CentralController"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+	
+}	
+Class[appliedStereotypes~="nacre::Substation"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+	
+}
+
+Class[appliedStereotypes~="nacre::Substation"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/substation.svg";
+	displayStereotypes: false;
+}
+
+
+
+Class[appliedStereotypes~="nacre::CentralController"], Class[appliedStereotypes~="nacre::ZonalController"], Class[appliedStereotypes~="nacre::LocalController"] {
+	fillColor: #FFA500;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/controller.svg";
+	displayStereotypes: false;
+}
+
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::ComputingResource"] {
+	fillColor: #A6C198;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_Foundations::GRM::ComputingResource"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_DesignModel::SRM::SW_Concurrency::SwSchedulableResource"] {
+	fillColor: #FFA500;
+	displayStereotypes: false;
+	maintainSymbolRatio: true;
+}
+
+Class[appliedStereotypes~="MARTE::MARTE_DesignModel::SRM::SW_Concurrency::SwSchedulableResource"] > Compartment[kind="symbol"] {
+	visible: false;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Abstraction > Label:name {
+	visible: false;
+}
+
+
+Shape {
+	shapeVisibility: true;
+}
+

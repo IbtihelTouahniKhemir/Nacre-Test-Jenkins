@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><Composite xmlns="http://www.eclipse.org/xwt/presentation" xmlns:j="clr-namespace:java.lang" xmlns:ppe="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets" xmlns:ppel="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets.layout" xmlns:x="http://www.eclipse.org/xwt">
+            <Composite.layout>
+                        <ppel:PropertiesLayout/>
+            </Composite.layout>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout/>
+                        </Composite.layout>
+                        <ppe:StringEditor input="{Binding}" property="UML:NamedElement:name"/>
+            </Composite>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="1"/>
+                        </Composite.layout>
+                        <ppe:StringEditor input="{Binding}" property="nacre:RTE_Installation:end"/>
+                        <ppe:StringEditor input="{Binding}" property="nacre:RTE_Installation:branch"/>
+            </Composite>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="2"/>
+                        </Composite.layout>
+                        <ppe:BooleanRadio input="{Binding}" property="nacre:Equipement:isConnected"/>
+            </Composite>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="2"/>
+                        </Composite.layout>
+                        <ppe:IntegerEditor input="{Binding}" property="nacre:RTE_Installation:side"/>
+            </Composite>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="1"/>
+                        </Composite.layout>
+                        <ppe:ReferenceDialog input="{Binding}" property="nacre:RTE_Installation:ist"/>
+                        <ppe:ReferenceDialog input="{Binding}" property="nacre:Equipement:bus"/>
+                        <ppe:ReferenceDialog input="{Binding}" property="nacre:Equipement:localcontroller"/>
+            </Composite>
+</Composite>

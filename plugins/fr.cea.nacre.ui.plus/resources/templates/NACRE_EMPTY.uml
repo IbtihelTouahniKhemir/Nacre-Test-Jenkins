@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GRM="http://www.eclipse.org/papyrus/GRM/1" xmlns:SW_Concurrency="http://www.eclipse.org/papyrus/SW_Concurrency/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nacre="http://www.eclipse.org/papyrus/nacre" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/GRM/1 http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM http://www.eclipse.org/papyrus/SW_Concurrency/1 http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Concurrency">
+  <uml:Model xmi:id="_Dj8KkA-vEe6ageGSdAiVaw" name="NACRE_EMPTY">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-UA-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_dDxjEAeNEdytasR0-Ec7ew"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-UQ-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_3DJKAA4uEdysTsAUPnp57Q"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-Ug-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_X3JtMAeNEdytasR0-Ec7ew"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-Uw-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_g2qR8A74EdyML4mHwjNDrw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-VA-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_l6ms8A74EdyML4mHwjNDrw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-VQ-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_x9l9sA74EdyML4mHwjNDrw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-Vg-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_2GPOEA74EdyML4mHwjNDrw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_DmV-Vw-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_RTwjABgzEdyHL91mBnoLNQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Dm7NIA-vEe6ageGSdAiVaw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ICfZgA-vEe6ageGSdAiVaw" name="CFA">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VTumEA-vEe6ageGSdAiVaw" name="MainGrid"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_2T2WsJW3Ee6H47R4h58E9w" name="Controllers">
+        <packagedElement xmi:type="uml:Class" xmi:id="_YIi3EA-vEe6ageGSdAiVaw" name="CentralController"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZQf9oA-vEe6ageGSdAiVaw" name="Control3" client="_YIi3EA-vEe6ageGSdAiVaw" supplier="_VTumEA-vEe6ageGSdAiVaw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_J6e14A-vEe6ageGSdAiVaw" name="CRAS">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NKRjgBUREe67X5BncE4o0Q" name="CRA1">
+        <packagedElement xmi:type="uml:Package" xmi:id="__pWtgJW3Ee6H47R4h58E9w" name="CM"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_AnB2sJW4Ee6H47R4h58E9w" name="CR"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_B5MpMJW4Ee6H47R4h58E9w" name="SR">
+          <packagedElement xmi:type="uml:Class" xmi:id="_oLAOEA-vEe6ageGSdAiVaw" name="SR_CentralController"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_QY8HEA-vEe6ageGSdAiVaw" name="CFRAS">
+      <packagedElement xmi:type="uml:Package" xmi:id="_P7E3MBUREe67X5BncE4o0Q" name="CFRA1">
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_EfSWICV0Ee63cdxgBrCZfw" client="_oLAOEA-vEe6ageGSdAiVaw" supplier="_YIi3EA-vEe6ageGSdAiVaw"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DkTW8A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DkTW8Q-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/nacre#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://NACRE_PROFILE/nacre.profile.uml#_LEwB0JZnEe2IbuniN280Gw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmHU0A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmHU0Q-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_zaC5cAPHEdyeNfbOYuD9pg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmV-WA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmV-WQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_jG1CQAPKEdy6wIwMc4WDOQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmWlYA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmWlYQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/CoreElements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_-wEewECLEd6UTJZnztgOLw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmWlYg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmWlYw-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/NFPs"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_U_GAoAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmWlZA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmWlZQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/Time"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_WStkoAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmWlZg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXMcA-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXMcQ-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXMcg-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/Alloc"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ar8OsAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXMcw-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXMdA-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_tADfQAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXMdQ-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXMdg-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HLAM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_yNSZIAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXzgA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXzgQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_2dtsgAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXzgg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXzgw-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_P80EcBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXzhA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmXzhQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwComputing"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_aMhZsBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmXzhg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmYakA-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwCommunication"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_bmL7UBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmYakQ-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmYakg-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwTiming"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_dG2c0BJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmYakw-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmYalA-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwDevice"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ja8REBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmYalQ-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmYalg-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ZJjPoEIbEd6dmI2dd6jVFQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmYalw-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZBoA-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage/HwMemory"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_gHI-ABJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmZBoQ-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZBog-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage/HwStorageManager"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_hst0sBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmZBow-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZBpA-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_R7sL8BJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmZBpQ-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZBpg-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical/HwLayout"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_uAf6gBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmZosA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZosQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical/HwPower"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_vrbyUBJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmZosg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZosw-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwGeneral"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_WGZ44BJwEdygQ5HMNSpiZw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmZotA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmZotQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_3VS0wAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmaPwA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmaPwQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_ResourceCore"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_-1fcUBJdEdy3Td9UhuLFPg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmaPwg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmaPww-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Concurrency"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_A_vtYBJeEdy3Td9UhuLFPg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmaPxA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmaPxQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Brokering"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_Cf874BJeEdy3Td9UhuLFPg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dma20A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dma20Q-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Interaction"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_EIfnABJeEdy3Td9UhuLFPg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dma20g-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dma20w-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/GCM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_YgAioAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dma21A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dma21Q-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_u8y4wAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dmbd4A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dmbd4Q-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dmbd4g-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dmbd4w-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/SAM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5ZCOIAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dmbd5A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmcE8A-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/PAM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_6c2bkAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmcE8Q-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmcE8g-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_9ZhBAAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmcE8w-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmcE9A-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/RSM"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_DIIJoAPNEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmcsAA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmcsAQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/VSL"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_CHiIYA-LEdyNj8xzjk-DoA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmcsAg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmcsAw-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/VSL/DataTypes"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_9FdqwA-MEdyLh7muGbCqMw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmdTEA-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmdTEQ-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/VSL/Variables"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_9UgzYA-MEdyLh7muGbCqMw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DmdTEg-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DmdTEw-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/VSL/Operators"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_jg_Z8PfhEd-f4r3MXmUB9g"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Dmkn0A-vEe6ageGSdAiVaw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dmkn0Q-vEe6ageGSdAiVaw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Hazards#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://HAZARDS_PROFILE/hazards.profile.uml#_zyEroGsbEe2UgIhxLP1lYw"/>
+    </profileApplication>
+  </uml:Model>
+  <nacre:MainGrid xmi:id="_VU3OgA-vEe6ageGSdAiVaw" base_Class="_VTumEA-vEe6ageGSdAiVaw" centralcontroler="_YIoWoA-vEe6ageGSdAiVaw"/>
+  <nacre:CentralController xmi:id="_YIoWoA-vEe6ageGSdAiVaw" base_Class="_YIi3EA-vEe6ageGSdAiVaw" maingrid="_VU3OgA-vEe6ageGSdAiVaw"/>
+  <nacre:Control xmi:id="_ZQkPEA-vEe6ageGSdAiVaw" base_Abstraction="_ZQf9oA-vEe6ageGSdAiVaw"/>
+  <GRM:ResourceUsage xmi:id="_oLFtoA-vEe6ageGSdAiVaw" base_NamedElement="_oLAOEA-vEe6ageGSdAiVaw"/>
+  <SW_Concurrency:SwSchedulableResource xmi:id="_oLIJ4A-vEe6ageGSdAiVaw" base_Classifier="_oLAOEA-vEe6ageGSdAiVaw" type="periodic(period=15, jitter=0)"/>
+  <nacre:CFA xmi:id="_xiC0kJW3Ee6H47R4h58E9w" base_Package="_ICfZgA-vEe6ageGSdAiVaw"/>
+  <nacre:CRAS xmi:id="_yuv4QJW3Ee6H47R4h58E9w" base_Package="_J6e14A-vEe6ageGSdAiVaw"/>
+  <nacre:CFRAS xmi:id="_0TQX8JW3Ee6H47R4h58E9w" base_Package="_QY8HEA-vEe6ageGSdAiVaw"/>
+  <nacre:Controllers xmi:id="_3wBZwJW3Ee6H47R4h58E9w" base_Package="_2T2WsJW3Ee6H47R4h58E9w"/>
+  <nacre:CFRA xmi:id="_9HRyUJW3Ee6H47R4h58E9w" cra="_QNErwJXqEe6UPbeP37R7WA" base_Package="_P7E3MBUREe67X5BncE4o0Q"/>
+  <nacre:CommunicationMedias xmi:id="_DkJIEJW4Ee6H47R4h58E9w" base_Package="__pWtgJW3Ee6H47R4h58E9w"/>
+  <nacre:ComputingResources xmi:id="_FJ-dcJW4Ee6H47R4h58E9w" base_Package="_AnB2sJW4Ee6H47R4h58E9w"/>
+  <nacre:SoftwareResources xmi:id="_HNt20JW4Ee6H47R4h58E9w" base_Package="_B5MpMJW4Ee6H47R4h58E9w"/>
+  <nacre:CRA xmi:id="_QNErwJXqEe6UPbeP37R7WA" base_Package="_NKRjgBUREe67X5BncE4o0Q"/>
+</xmi:XMI>

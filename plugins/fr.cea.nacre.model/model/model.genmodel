@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/fr.cea.nacre.model/src-gen" editDirectory="/fr.cea.nacre.model.edit/src-gen"
+    editorDirectory="/fr.cea.nacre.model.editor/src-gen" modelPluginID="fr.cea.nacre.model"
+    modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/fr.cea.nacre.model.tests/src-gen" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="17.0" copyrightFields="false" usedGenPackages="../../org.eclipse.uml2.types/model/Types.genmodel#//types"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>model.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="NACREMM" basePackage="fr.cea.nacre.model"
+      disposableProviderFactory="true" ecorePackage="NACREMM.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Cra" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//cra">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="NACREMM.ecore#//cra/RedundancyKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="NACREMM.ecore#//cra/RedundancyKind/consensus"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="NACREMM.ecore#//cra/RedundancyKind/hypervisor"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="NACREMM.ecore#//cra/RedundancyKind/active_standby"/>
+      </genEnums>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cra/Cra">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/Cra/communicationMedias"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/Cra/computingResources"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/Cra/softwareResources"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/Cra/redundancyClusters"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cra/CommunicationMedia">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/CommunicationMedia/latency"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/CommunicationMedia/capacity"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/CommunicationMedia/communicationMedias"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cra/ComputingResource">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/ComputingResource/communicationMedias"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cra/SoftwareResource">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/SoftwareResource/computingResources"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/SoftwareResource/period"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cra/SoftwareResource/executionTime"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cra/RedundancyCluster">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/RedundancyCluster/runtime"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/RedundancyCluster/active"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/RedundancyCluster/passive"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cra/RedundancyCluster/hypervisor"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="UID" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//UID">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//UID/UIDElement">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//UID/UIDElement/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//UID/UIDElement/uid"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//UID/UIDElement/qualifiedName"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="CommonType" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//CommonType">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//CommonType/Period">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/Period/start"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/Period/end"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/Period/unit"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//CommonType/PeriodType">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/PeriodType/unit"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/PeriodType/value"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//CommonType/CommonType">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/CommonType/value"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//CommonType/CommonType/unit"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Cfra" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//cfra">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfra/Cfra">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfra/Cfra/abstractions"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfra/Cfra/cra"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfra/Abstraction">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfra/Abstraction/function"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfra/Abstraction/resource"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Hazard" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//Hazard">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/CommunicationHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/CommunicationHazard/component"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/CommunicationHazard/from"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/CommunicationHazard/to"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/CommunicationHazard/period"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/CommunicationHazard/percent"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/AbstractHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/AbstractHazard/description"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/AbstractHazard/justification"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/CraHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/CraHazard/cra"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/CraHazard/communicationHazards"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/NACREHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/NACREHazard/craHazards"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/NACREHazard/cfaHazards"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/CfaHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/CfaHazard/lineHazards"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/CfaHazard/cfa"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/CfaHazard/generatorhazard"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/LineHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/LineHazard/line"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/LineHazard/start"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//Hazard/GeneratorHazard">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference NACREMM.ecore#//Hazard/GeneratorHazard/start"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//Hazard/GeneratorHazard/generator"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Cfa" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//cfa">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="NACREMM.ecore#//cfa/PowerUnitKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="NACREMM.ecore#//cfa/PowerUnitKind/MW"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="NACREMM.ecore#//cfa/PowerUnitKind/KW"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="NACREMM.ecore#//cfa/PowerUnitKind/W"/>
+      </genEnums>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Cfa">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Cfa/maingrid"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/MainGrid">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/MainGrid/zones"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/MainGrid/substations"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/MainGrid/centralController"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/MainGrid/lines"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Zone">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Zone/substations"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Zone/zonalController"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Substation">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Substation/bus"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Bus">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Bus/nominalLevel"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/Bus/connected"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Bus/generators"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Bus/batteries"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Bus/rteInstallations"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Bus/loads"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Generator">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Generator/minPowerGeneration"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Generator/maxPowerGeneration"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Equipment">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/Equipment/connected"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Equipment/localController"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/Equipment/activable"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Controller">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/Controller/controlBehavior"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/PowerType">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/PowerType/value"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/PowerType/unit"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Battery">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Battery/maxPowerInjection"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/Battery/minPowerInjection"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/RteInstallation">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/RteInstallation/branch"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/RteInstallation/connected"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/RteInstallation/activable"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/RteInstallation/localController"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/RteInstallation/end"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/RteInstallation/side"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EReference NACREMM.ecore#//cfa/RteInstallation/ist"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//cfa/RteInstallation/lineRef"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Load"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//cfa/Line"/>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Study" basePackage="fr.cea.nacre.model.NACREMM"
+        disposableProviderFactory="true" ecorePackage="NACREMM.ecore#//study">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//study/Study">
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//study/Study/cfa"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//study/Study/cras"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//study/Study/cfras"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+            createChild="true" ecoreFeature="ecore:EReference NACREMM.ecore#//study/Study/hazards"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//study/Manifest">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//study/Manifest/version"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//study/Manifest/description"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//study/Manifest/service"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//study/Manifest/type"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="NACREMM.ecore#//study/UsingDirectives">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//study/UsingDirectives/iidm"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute NACREMM.ecore#//study/UsingDirectives/filter"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="NACREMM" nsURI="http:///NACREMM.ecore" nsPrefix="NACREMM">
+  <eSubpackages name="cra" nsURI="http:///NACREMM/cra.ecore" nsPrefix="NACREMM.cra">
+    <eClassifiers xsi:type="ecore:EClass" name="Cra" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="communicationMedias"
+          ordered="false" upperBound="-1" eType="#//cra/CommunicationMedia" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="computingResources" ordered="false"
+          upperBound="-1" eType="#//cra/ComputingResource" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="softwareResources" ordered="false"
+          upperBound="-1" eType="#//cra/SoftwareResource" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="redundancyClusters" ordered="false"
+          upperBound="-1" eType="#//cra/RedundancyCluster" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CommunicationMedia" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="latency" ordered="false"
+          eType="#//CommonType/CommonType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="capacity" ordered="false"
+          eType="#//CommonType/CommonType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="communicationMedias"
+          ordered="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ComputingResource" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="communicationMedias"
+          ordered="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SoftwareResource" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="computingResources" ordered="false"
+          upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="period" ordered="false"
+          eType="#//CommonType/PeriodType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="executionTime" ordered="false"
+          eType="#//CommonType/CommonType" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RedundancyCluster" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtime" ordered="false"
+          lowerBound="1" eType="#//cra/RedundancyKind"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="active" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="passive" ordered="false"
+          upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="hypervisor" ordered="false"
+          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="RedundancyKind">
+      <eLiterals name="consensus"/>
+      <eLiterals name="hypervisor" value="1"/>
+      <eLiterals name="active_standby" value="2"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="UID" nsURI="http:///NACREMM/UID.ecore" nsPrefix="NACREMM.UID">
+    <eClassifiers xsi:type="ecore:EClass" name="UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="uid" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualifiedName" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="CommonType" nsURI="http:///NACREMM/CommonType.ecore" nsPrefix="NACREMM.CommonType">
+    <eClassifiers xsi:type="ecore:EClass" name="Period">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="start" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PeriodType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CommonType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="cfra" nsURI="http:///NACREMM/cfra.ecore" nsPrefix="NACREMM.cfra">
+    <eClassifiers xsi:type="ecore:EClass" name="Cfra" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="abstractions" ordered="false"
+          upperBound="-1" eType="#//cfra/Abstraction" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cra" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Abstraction">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="function" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="resource" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Hazard" nsURI="http:///NACREMM/Hazard.ecore" nsPrefix="NACREMM.Hazard">
+    <eClassifiers xsi:type="ecore:EClass" name="CommunicationHazard" eSuperTypes="#//Hazard/AbstractHazard">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="component" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" ordered="false" lowerBound="1"
+          eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="period" ordered="false"
+          lowerBound="1" eType="#//CommonType/Period"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="percent" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AbstractHazard" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="justification" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CraHazard" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cra" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="communicationHazards"
+          ordered="false" upperBound="-1" eType="#//Hazard/CommunicationHazard" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="NACREHazard" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="craHazards" ordered="false"
+          upperBound="-1" eType="#//Hazard/CraHazard" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cfaHazards" ordered="false"
+          upperBound="-1" eType="#//Hazard/CfaHazard" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CfaHazard" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lineHazards" ordered="false"
+          upperBound="-1" eType="#//Hazard/LineHazard" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cfa" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generatorhazard" ordered="false"
+          upperBound="-1" eType="#//Hazard/GeneratorHazard" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LineHazard" eSuperTypes="#//Hazard/AbstractHazard">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="line" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="start" ordered="false"
+          lowerBound="1" eType="#//CommonType/PeriodType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="GeneratorHazard" eSuperTypes="#//Hazard/AbstractHazard">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="start" ordered="false"
+          lowerBound="1" eType="#//CommonType/PeriodType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="cfa" nsURI="http:///NACREMM/cfa.ecore" nsPrefix="NACREMM.cfa">
+    <eClassifiers xsi:type="ecore:EClass" name="Cfa" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="maingrid" ordered="false"
+          eType="#//cfa/MainGrid" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MainGrid" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="zones" ordered="false"
+          upperBound="-1" eType="#//cfa/Zone" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="substations" ordered="false"
+          lowerBound="1" upperBound="-1" eType="#//cfa/Substation" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="centralController" ordered="false"
+          eType="#//cfa/Controller" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lines" ordered="false"
+          upperBound="-1" eType="#//cfa/Line" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Zone" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="substations" ordered="false"
+          lowerBound="1" upperBound="-1" eType="#//cfa/Substation" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="zonalController" ordered="false"
+          eType="#//cfa/Controller" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Substation" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bus" ordered="false"
+          upperBound="-1" eType="#//cfa/Bus" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Bus" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="nominalLevel" ordered="false"
+          eType="#//CommonType/CommonType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="connected" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="generators" ordered="false"
+          upperBound="-1" eType="#//cfa/Generator" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="batteries" ordered="false"
+          upperBound="-1" eType="#//cfa/Battery" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rteInstallations" ordered="false"
+          upperBound="-1" eType="#//cfa/RteInstallation" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="loads" ordered="false"
+          upperBound="-1" eType="#//cfa/Load" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Generator" eSuperTypes="#//cfa/Equipment">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="minPowerGeneration" ordered="false"
+          eType="#//cfa/PowerType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="maxPowerGeneration" ordered="false"
+          eType="#//cfa/PowerType" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Equipment" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="connected" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="localController" ordered="false"
+          eType="#//cfa/Controller" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="activable" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Controller" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="controlBehavior" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PowerType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Battery" eSuperTypes="#//cfa/Equipment">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="maxPowerInjection" ordered="false"
+          eType="#//cfa/PowerType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="minPowerInjection" ordered="false"
+          eType="#//cfa/PowerType" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RteInstallation" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="branch" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="connected" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="activable" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="localController" ordered="false"
+          eType="#//cfa/Controller" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="side" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ist" ordered="false"
+          eType="#//cfa/PowerType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineRef" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Load" eSuperTypes="#//cfa/Equipment"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Line" eSuperTypes="#//UID/UIDElement"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="PowerUnitKind">
+      <eLiterals name="MW"/>
+      <eLiterals name="KW" value="1"/>
+      <eLiterals name="W" value="2"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="study" nsURI="http:///NACREMM/study.ecore" nsPrefix="NACREMM.study">
+    <eClassifiers xsi:type="ecore:EClass" name="Study" eSuperTypes="#//UID/UIDElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cfa" ordered="false"
+          eType="#//cfa/Cfa" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cras" ordered="false"
+          upperBound="-1" eType="#//cra/Cra" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cfras" ordered="false"
+          upperBound="-1" eType="#//cfra/Cfra" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="hazards" ordered="false"
+          lowerBound="1" eType="#//Hazard/NACREHazard" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Manifest">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="UsingDirectives">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="iidm" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="filter" ordered="false"
+          lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

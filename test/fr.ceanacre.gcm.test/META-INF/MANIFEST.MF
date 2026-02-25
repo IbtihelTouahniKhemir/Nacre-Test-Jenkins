@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.ceanacre.gcm.test
+Bundle-SymbolicName: fr.ceanacre.gcm.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: fr.ceanacre.gcm.test.Activator
+Bundle-Vendor: CEA LIST
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.papyrus.junit.framework,
+ org.eclipse.papyrus.junit.utils,
+ org.junit,
+ org.eclipse.uml2.uml,
+ org.eclipse.emf.transaction,
+ fr.cea.nacre.model,
+ fr.cea.nacre.ui.plus
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: fr.ceanacre.gcm.test
+Bundle-ActivationPolicy: lazy

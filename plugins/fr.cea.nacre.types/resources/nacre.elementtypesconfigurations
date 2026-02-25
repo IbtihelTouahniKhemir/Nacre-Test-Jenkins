@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.nacre.elementTypes" identifier="com.example.nacre.elementTypes" name="nacre" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_W2l5ABBJEe6FTbLGZyVqaA" identifier="fr.cea.nacre.advice.controlSupplier" inheritance="all" editHelperAdviceClassName="fr.cea.nacre.types.advices.ControlSupplierEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_ETKJEIPDEe6Om6UJXxLxmw" identifier="fr.cea.nacre.types.advices.CommunicationMediaAdvice" inheritance="all" editHelperAdviceClassName="fr.cea.nacre.types.advices.CommunicationMediaAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_CsIHYBiQEe-lJsQmJcQung" identifier="fr.cea.nacre.types.advices.ZonalControllerAdvice" editHelperAdviceClassName="fr.cea.nacre.types.advices.ZonalControllerAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_CsIHYBiQEeSW" identifier="fr.cea.nacre.types.advices.SwResourceEditHelperAdvice" editHelperAdviceClassName="fr.cea.nacre.types.advices.SwResourceEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </adviceBindingsConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Battery_Class" identifier="com.example.nacre.Battery_Class" name="Battery Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eoZKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoYqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_E4HP8JhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoY6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoZKNQEe2bgpIvWHG5sg" description="Apply Stereotype Battery" identifier="com.example.nacre.battery" target="com.example.nacre.Battery_Class" matchedType="com.example.nacre.Battery_Class">
+      <stereotypesQualifiedNames>nacre::Battery</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Battery_Port" identifier="com.example.nacre.Battery_Port" name="Battery Port" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_GuK08BNfEe6baosRQEb5Og" matcherConfiguration="_a2eoaKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoZqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_E4HP8JhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoZ6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoaKNQEe2bgpIvWHG5sg" description="Apply Stereotype Battery Port" identifier="com.example.nacre.battery" target="com.example.nacre.Battery_Port" matchedType="com.example.nacre.Battery_Port">
+      <stereotypesQualifiedNames>nacre::Battery</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_GuK08BNfEe6baosRQEb5Og" after="_a2eoaKNQEe2bgpIvWHG5sg" target="com.example.nacre.Battery_Port" editHelperAdviceClassName="fr.cea.nacre.types.advices.EquipementEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Battery_Property" identifier="com.example.nacre.Battery_Property" name="Battery Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eobKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoaqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_E4HP8JhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoa6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eobKNQEe2bgpIvWHG5sg" description="Apply Stereotype Battery" identifier="com.example.nacre.battery" target="com.example.nacre.Battery_Property" matchedType="com.example.nacre.Battery_Property">
+      <stereotypesQualifiedNames>nacre::Battery</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Bus_Class" identifier="com.example.nacre.Bus_Class" name="Bus Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eocKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eobqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_5i0LoJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eob6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eocKNQEe2bgpIvWHG5sg" description="Apply Stereotype Bus" identifier="com.example.nacre.bus" target="com.example.nacre.Bus_Class" matchedType="com.example.nacre.Bus_Class">
+      <stereotypesQualifiedNames>nacre::Bus</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Bus_Property" identifier="com.example.nacre.Bus_Property" name="Bus Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eodKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eocqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_5i0LoJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoc6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eodKNQEe2bgpIvWHG5sg" description="Apply Stereotype Bus" identifier="com.example.nacre.bus" target="com.example.nacre.Bus_Property" matchedType="com.example.nacre.Bus_Property">
+      <stereotypesQualifiedNames>nacre::Bus</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CentralController_Class" identifier="com.example.nacre.CentralController_Class" name="CentralController Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eoeKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eodqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_3Z8kcJ8UEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eod6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoeKNQEe2bgpIvWHG5sg" description="Apply Stereotype CentralController" identifier="com.example.nacre.centralController" target="com.example.nacre.CentralController_Class" matchedType="com.example.nacre.CentralController_Class">
+      <stereotypesQualifiedNames>nacre::CentralController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CentralController_Property" identifier="com.example.nacre.CentralController_Property" name="CentralController Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoeqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_3Z8kcJ8UEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoe6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Connect" identifier="com.example.nacre.Connect" name="Connect" hint="UML::Abstraction" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eogKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eofqNQEe2bgpIvWHG5sg1" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_os5NAJ_LEe2obsxMV33u8Q"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eof6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Abstraction.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eogKNQEe2bgpIvWHG5sg" description="Apply Stereotype Connect" identifier="com.example.nacre.connect" target="com.example.nacre.Connect" matchedType="com.example.nacre.Connect">
+      <stereotypesQualifiedNames>nacre::Connect</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Control" identifier="com.example.nacre.Control" name="Control" hint="UML::Abstraction" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_T9WA4BB-Ee6xa5G40L4vCw" matcherConfiguration="_a2eohKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eogqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_eMt8YKJIEe2NCtCxKZJjQg"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eog6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Abstraction.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eohKNQEe2bgpIvWHG5sg" description="Apply Stereotype Control" identifier="com.example.nacre.control" target="com.example.nacre.Control" matchedType="com.example.nacre.Control">
+      <stereotypesQualifiedNames>nacre::Control</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_T9WA4BB-Ee6xa5G40L4vCw" target="com.example.nacre.Control" editHelperAdviceClassName="fr.cea.nacre.types.advices.ControlEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Equipement_Class" identifier="com.example.nacre.Equipement_Class" name="Equipement Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eoiKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eohqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_DT32AJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoh6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoiKNQEe2bgpIvWHG5sg" description="Apply Stereotype Equipement" identifier="com.example.nacre.equipement" target="com.example.nacre.Equipement_Class" matchedType="com.example.nacre.Equipement_Class">
+      <stereotypesQualifiedNames>nacre::Equipement</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Equipement_Port" identifier="com.example.nacre.Equipement_Port" name="Equipement Port" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoiqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_DT32AJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoi6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Equipement_Property" identifier="com.example.nacre.Equipement_Property" name="Equipement Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eokKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eojqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_DT32AJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoj6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eokKNQEe2bgpIvWHG5sg" description="Apply Stereotype Equipement" identifier="com.example.nacre.equipement" target="com.example.nacre.Equipement_Property" matchedType="com.example.nacre.Equipement_Property">
+      <stereotypesQualifiedNames>nacre::Equipement</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Generator_Class" identifier="com.example.nacre.Generator_Class" name="Generator Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eolKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eokqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_D8ofIJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eok6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eolKNQEe2bgpIvWHG5sg" description="Apply Stereotype Generator Class" identifier="com.example.nacre.generator" target="com.example.nacre.Generator_Class" matchedType="com.example.nacre.Generator_Class">
+      <stereotypesQualifiedNames>nacre::Generator</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Generator_Port" identifier="com.example.nacre.Generator_Port" name="Generator Port" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_o8uU4KNREe2bgpIvWHG5sg" matcherConfiguration="_a2eomKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eolqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_D8ofIJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eol6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eomKNQEe2bgpIvWHG5sg" description="Apply Stereotype Generator Port" identifier="com.example.nacre.generator" target="com.example.nacre.Generator_Port" matchedType="com.example.nacre.Generator_Port">
+      <stereotypesQualifiedNames>nacre::Generator</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_o8uU4KNREe2bgpIvWHG5sg" after="_a2eomKNQEe2bgpIvWHG5sg" target="com.example.nacre.Generator_Port" editHelperAdviceClassName="fr.cea.nacre.types.advices.EquipementEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Generator_Property" identifier="com.example.nacre.Generator_Property" name="Generator Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eonKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eomqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_D8ofIJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eom6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eonKNQEe2bgpIvWHG5sg" description="Apply Stereotype Generator" identifier="com.example.nacre.generator" target="com.example.nacre.Generator_Property" matchedType="com.example.nacre.Generator_Property">
+      <stereotypesQualifiedNames>nacre::Generator</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.LocalController_Class" identifier="com.example.nacre.LocalController_Class" name="LocalController Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eooKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eonqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_aUb3wJ8dEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eon6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eooKNQEe2bgpIvWHG5sg" description="Apply Stereotype LocalController" identifier="com.example.nacre.localController" target="com.example.nacre.LocalController_Class" matchedType="com.example.nacre.LocalController_Class">
+      <stereotypesQualifiedNames>nacre::LocalController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.LocalController_Property" identifier="com.example.nacre.LocalController_Property" name="LocalController Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eooqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_aUb3wJ8dEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoo6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.MainGrid" identifier="com.example.nacre.MainGrid" name="MainGrid" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eoqKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eopqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_2zAWcJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eop6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoqKNQEe2bgpIvWHG5sg" description="Apply Stereotype MainGrid" identifier="com.example.nacre.mainGrid" target="com.example.nacre.MainGrid" matchedType="com.example.nacre.MainGrid">
+      <stereotypesQualifiedNames>nacre::MainGrid</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.RTE_Installation_Class" identifier="com.example.nacre.RTE_Installation_Class" name="RTE_Installation Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eorKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoqqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_EadqoJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoq6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eorKNQEe2bgpIvWHG5sg" description="Apply Stereotype RTE_Installation" identifier="com.example.nacre.rTE_Installation" target="com.example.nacre.RTE_Installation_Class" matchedType="com.example.nacre.RTE_Installation_Class">
+      <stereotypesQualifiedNames>nacre::RTE_Installation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.RTE_Installation_Port" identifier="com.example.nacre.RTE_Installation_Port" name="RTE_Installation Port" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_8NdPQBNeEe6baosRQEb5Og" matcherConfiguration="_a2eosKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eorqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_EadqoJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eor6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eosKNQEe2bgpIvWHG5sg" description="Apply Stereotype RTE_Installation Port" identifier="com.example.nacre.rTE_Installation" target="com.example.nacre.RTE_Installation_Port" matchedType="com.example.nacre.RTE_Installation_Port">
+      <stereotypesQualifiedNames>nacre::RTE_Installation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_8NdPQBNeEe6baosRQEb5Og" after="_a2eosKNQEe2bgpIvWHG5sg" target="com.example.nacre.RTE_Installation_Port" editHelperAdviceClassName="fr.cea.nacre.types.advices.EquipementEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.RTE_Installation_Property" identifier="com.example.nacre.RTE_Installation_Property" name="RTE_Installation Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eotKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eosqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_EadqoJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eos6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eotKNQEe2bgpIvWHG5sg" description="Apply Stereotype RTE_Installation" identifier="com.example.nacre.rTE_Installation" target="com.example.nacre.RTE_Installation_Property" matchedType="com.example.nacre.RTE_Installation_Property">
+      <stereotypesQualifiedNames>nacre::RTE_Installation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Substation_Class" identifier="com.example.nacre.Substation_Class" name="Substation Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_q6HU0BEREe6bGKLc8ktI9A" matcherConfiguration="_atw-0BENEe6bGKLc8ktI9A">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eotqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_4_OWYJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eot6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_atw-0BENEe6bGKLc8ktI9A" description="Apply Stereotype Substation Class" identifier="com.example.nacre.substation" target="com.example.nacre.Substation_Class" matchedType="com.example.nacre.Substation_Class">
+      <stereotypesQualifiedNames>nacre::Substation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_q6HU0BEREe6bGKLc8ktI9A" after="_atw-0BENEe6bGKLc8ktI9A" target="com.example.nacre.Substation_Class" editHelperAdviceClassName="fr.cea.nacre.types.advices.SubstationEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Substation_Property" identifier="com.example.nacre.Substation_Property" name="Substation Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eouqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_4_OWYJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eou6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.ZonalController_Class" identifier="com.example.nacre.ZonalController_Class" name="ZonalController Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eowKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eovqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_-pLV0J8VEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eov6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eowKNQEe2bgpIvWHG5sg" description="Apply Stereotype ZonalController" identifier="com.example.nacre.zonalController" target="com.example.nacre.ZonalController_Class" matchedType="com.example.nacre.ZonalController_Class">
+      <stereotypesQualifiedNames>nacre::ZonalController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.ZonalController_Property" identifier="com.example.nacre.ZonalController_Property" name="ZonalController Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_a2eoxKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eowqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_-pLV0J8VEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eow6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoxKNQEe2bgpIvWHG5sg" description="Apply Stereotype ZonalController" identifier="com.example.nacre.zonalController" target="com.example.nacre.ZonalController_Property" matchedType="com.example.nacre.ZonalController_Property">
+      <stereotypesQualifiedNames>nacre::ZonalController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Zone_Class" identifier="com.example.nacre.Zone_Class" name="Zone Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_nIE5kBBAEe6FTbLGZyVqaA" matcherConfiguration="_a2eoyKNQEe2bgpIvWHG5sg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoxqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_4GUYcJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eox6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eoyKNQEe2bgpIvWHG5sg" description="Apply Stereotype Zone" identifier="com.example.nacre.zone" target="com.example.nacre.Zone_Class" matchedType="com.example.nacre.Zone_Class">
+      <stereotypesQualifiedNames>nacre::Zone</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_nIE5kBBAEe6FTbLGZyVqaA" target="com.example.nacre.Zone_Class" editHelperAdviceClassName="fr.cea.nacre.types.advices.ZoneEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Zone_Property" identifier="com.example.nacre.Zone_Property" name="Zone Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_a2eoyqNQEe2bgpIvWHG5sg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_4GUYcJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_a2eoy6NQEe2bgpIvWHG5sg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CentralController_Property" identifier="com.example.nacre.CentralController_Property" name="CentralController Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_SWwgoxR7Ee6ygJcq5-eIjg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_SWwgoRR7Ee6ygJcq5-eIjg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_3Z8kcJ8UEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_SWwgohR7Ee6ygJcq5-eIjg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_SWwgoxR7Ee6ygJcq5-eIjg" description="Apply Stereotype CentralController" identifier="com.example.nacre.centralController" target="com.example.nacre.CentralController_Property" matchedType="com.example.nacre.CentralController_Property">
+      <stereotypesQualifiedNames>nacre::CentralController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eofKNQEe2bgpIvWHG5sg" description="Apply Stereotype CentralController" identifier="com.example.nacre.centralController" target="com.example.nacre.CentralController_Property">
+      <stereotypesQualifiedNames>nacre::CentralController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Equipement_Port" identifier="com.example.nacre.Equipement_Port" name="Equipement Port" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_SWxHsBR7Ee6ygJcq5-eIjg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_SWwgpRR7Ee6ygJcq5-eIjg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_DT32AJhVEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_SWwgphR7Ee6ygJcq5-eIjg" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_SWxHsBR7Ee6ygJcq5-eIjg" description="Apply Stereotype Equipement" identifier="com.example.nacre.equipement" target="com.example.nacre.Equipement_Port" matchedType="com.example.nacre.Equipement_Port">
+      <stereotypesQualifiedNames>nacre::Equipement</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eojKNQEe2bgpIvWHG5sg" description="Apply Stereotype Equipement" identifier="com.example.nacre.equipement" target="com.example.nacre.Equipement_Port">
+      <stereotypesQualifiedNames>nacre::Equipement</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Link" identifier="com.example.nacre.Link" name="Link" hint="UML::Abstraction" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_SWxHtBR7Ee6ygJcq5-eIjg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_SWxHshR7Ee6ygJcq5-eIjg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_aTjNIA9OEe6u4r2KovhqHQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_SWxHsxR7Ee6ygJcq5-eIjg" iconPath="/icons/full/obj16/Abstraction.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_SWxHtBR7Ee6ygJcq5-eIjg" description="Apply Stereotype Link" identifier="com.example.nacre.link" target="com.example.nacre.Link" matchedType="com.example.nacre.Link">
+      <stereotypesQualifiedNames>nacre::Link</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Abstraction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.LocalController_Property" identifier="com.example.nacre.LocalController_Property" name="LocalController Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_SWxHuBR7Ee6ygJcq5-eIjg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_SWxHthR7Ee6ygJcq5-eIjg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_aUb3wJ8dEe2tJYAXoLaJSw"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_SWxHtxR7Ee6ygJcq5-eIjg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_SWxHuBR7Ee6ygJcq5-eIjg" description="Apply Stereotype LocalController" identifier="com.example.nacre.localController" target="com.example.nacre.LocalController_Property" matchedType="com.example.nacre.LocalController_Property">
+      <stereotypesQualifiedNames>nacre::LocalController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eopKNQEe2bgpIvWHG5sg" description="Apply Stereotype LocalController" identifier="com.example.nacre.localController" target="com.example.nacre.LocalController_Property">
+      <stereotypesQualifiedNames>nacre::LocalController</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Substation_Property" identifier="com.example.nacre.Substation_Property" name="Substation Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_SWxHvBR7Ee6ygJcq5-eIjg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_SWxHuhR7Ee6ygJcq5-eIjg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_4_OWYJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_SWxHuxR7Ee6ygJcq5-eIjg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_SWxHvBR7Ee6ygJcq5-eIjg" description="Apply Stereotype Substation" identifier="com.example.nacre.substation" target="com.example.nacre.Substation_Property" matchedType="com.example.nacre.Substation_Property">
+      <stereotypesQualifiedNames>nacre::Substation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eovKNQEe2bgpIvWHG5sg" description="Apply Stereotype Substation" identifier="com.example.nacre.substation" target="com.example.nacre.Substation_Property">
+      <stereotypesQualifiedNames>nacre::Substation</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Zone_Property" identifier="com.example.nacre.Zone_Property" name="Zone Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_SWxuwRR7Ee6ygJcq5-eIjg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_SWxHvhR7Ee6ygJcq5-eIjg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_4GUYcJhUEe2WSKZL6Ga9kA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_SWxuwBR7Ee6ygJcq5-eIjg" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_SWxuwRR7Ee6ygJcq5-eIjg" description="Apply Stereotype Zone" identifier="com.example.nacre.zone" target="com.example.nacre.Zone_Property" matchedType="com.example.nacre.Zone_Property">
+      <stereotypesQualifiedNames>nacre::Zone</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_a2eozKNQEe2bgpIvWHG5sg" description="Apply Stereotype Zone" identifier="com.example.nacre.zone" target="com.example.nacre.Zone_Property">
+      <stereotypesQualifiedNames>nacre::Zone</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CFA" identifier="com.example.nacre.CFA" name="CFA" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtUpk778Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtUpkb78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_Z5A_wJTxEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtUpkr78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtUpk778Ee-k14JvvhYxyg" description="Apply Stereotype CFA" identifier="com.example.nacre.cFA" target="com.example.nacre.CFA" matchedType="com.example.nacre.CFA">
+      <stereotypesQualifiedNames>nacre::CFA</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CFRA" identifier="com.example.nacre.CFRA" name="CFRA" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtVQor78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtVQoL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_fPjmoJTxEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtVQob78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtVQor78Ee-k14JvvhYxyg" description="Apply Stereotype CFRA" identifier="com.example.nacre.cFRA" target="com.example.nacre.CFRA" matchedType="com.example.nacre.CFRA">
+      <stereotypesQualifiedNames>nacre::CFRA</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CFRAS" identifier="com.example.nacre.CFRAS" name="CFRAS" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtVQpr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtVQpL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_Z8BF0JW0Ee6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtVQpb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtVQpr78Ee-k14JvvhYxyg" description="Apply Stereotype CFRAS" identifier="com.example.nacre.cFRAS" target="com.example.nacre.CFRAS" matchedType="com.example.nacre.CFRAS">
+      <stereotypesQualifiedNames>nacre::CFRAS</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CRA" identifier="com.example.nacre.CRA" name="CRA" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtVQqr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtVQqL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_cShNwJTxEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtVQqb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtVQqr78Ee-k14JvvhYxyg" description="Apply Stereotype CRA" identifier="com.example.nacre.cRA" target="com.example.nacre.CRA" matchedType="com.example.nacre.CRA">
+      <stereotypesQualifiedNames>nacre::CRA</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CRAS" identifier="com.example.nacre.CRAS" name="CRAS" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtVQrr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtVQrL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_Xf1XQJW0Ee6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtVQrb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtVQrr78Ee-k14JvvhYxyg" description="Apply Stereotype CRAS" identifier="com.example.nacre.cRAS" target="com.example.nacre.CRAS" matchedType="com.example.nacre.CRAS">
+      <stereotypesQualifiedNames>nacre::CRAS</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.CommunicationMedias" identifier="com.example.nacre.CommunicationMedias" name="CommunicationMedias" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtVQsr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtVQsL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_UFNf8JWzEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtVQsb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtVQsr78Ee-k14JvvhYxyg" description="Apply Stereotype CommunicationMedias" identifier="com.example.nacre.communicationMedias" target="com.example.nacre.CommunicationMedias" matchedType="com.example.nacre.CommunicationMedias">
+      <stereotypesQualifiedNames>nacre::CommunicationMedias</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.ComputingResources" identifier="com.example.nacre.ComputingResources" name="ComputingResources" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtVQtr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtVQtL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_Wqx0AJWzEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtVQtb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtVQtr78Ee-k14JvvhYxyg" description="Apply Stereotype ComputingResources" identifier="com.example.nacre.computingResources" target="com.example.nacre.ComputingResources" matchedType="com.example.nacre.ComputingResources">
+      <stereotypesQualifiedNames>nacre::ComputingResources</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.Controllers" identifier="com.example.nacre.Controllers" name="Controllers" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtV3sr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtV3sL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_p0chsJTxEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtV3sb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtV3sr78Ee-k14JvvhYxyg" description="Apply Stereotype Controllers" identifier="com.example.nacre.controllers" target="com.example.nacre.Controllers" matchedType="com.example.nacre.Controllers">
+      <stereotypesQualifiedNames>nacre::Controllers</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.RedundancyCluster" identifier="com.example.nacre.RedundancyCluster" name="RedundancyCluster" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtV3tr78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtV3tL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_3T-8IKDTEe-7zNnDuh5SAQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtV3tb78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtV3tr78Ee-k14JvvhYxyg" description="Apply Stereotype RedundancyCluster" identifier="com.example.nacre.redundancyCluster" target="com.example.nacre.RedundancyCluster" matchedType="com.example.nacre.RedundancyCluster">
+      <stereotypesQualifiedNames>nacre::RedundancyCluster</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.nacre.SoftwareResources" identifier="com.example.nacre.SoftwareResources" name="SoftwareResources" hint="UML::Package" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_WtV3ur78Ee-k14JvvhYxyg">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_WtV3uL78Ee-k14JvvhYxyg" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_YcpaQJWzEe6mmMtN21MBwQ"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_WtV3ub78Ee-k14JvvhYxyg" iconPath="/icons/full/obj16/Package.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_WtV3ur78Ee-k14JvvhYxyg" description="Apply Stereotype SoftwareResources" identifier="com.example.nacre.softwareResources" target="com.example.nacre.SoftwareResources" matchedType="com.example.nacre.SoftwareResources">
+      <stereotypesQualifiedNames>nacre::SoftwareResources</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_EVNnIKWpEfCG49UbWj63Cw" identifier="com.example.nacre.Load_Class" name="Load Class" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_EVNnI6WpEfCG49UbWj63Cw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_EVNnIaWpEfCG49UbWj63Cw" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_pKMI0I_GEfCQ5Ov1l2eVNA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_EVNnIqWpEfCG49UbWj63Cw" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_EVNnI6WpEfCG49UbWj63Cw" description="Apply Stereotype Load" identifier="com.example.nacre.load" target="_EVNnIKWpEfCG49UbWj63Cw" matchedType="_EVNnIKWpEfCG49UbWj63Cw">
+      <stereotypesQualifiedNames>nacre::Load</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_EVNnJKWpEfCG49UbWj63Cw" identifier="com.example.nacre.Load_Port" name="Load Port" hint="UML::Port" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperAdviceConfiguration="_EVOOMqWpEfCG49UbWj63Cw" matcherConfiguration="_EVOOMaWpEfCG49UbWj63Cw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_EVNnJaWpEfCG49UbWj63Cw" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_pKMI0I_GEfCQ5Ov1l2eVNA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_EVOOMKWpEfCG49UbWj63Cw" iconPath="/icons/full/obj16/Port.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_EVOOMaWpEfCG49UbWj63Cw" description="Apply Stereotype Load Port" identifier="com.example.nacre.load" target="_EVNnJKWpEfCG49UbWj63Cw" matchedType="_EVNnJKWpEfCG49UbWj63Cw">
+      <stereotypesQualifiedNames>nacre::Load</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_EVOOMqWpEfCG49UbWj63Cw" after="_EVOOMaWpEfCG49UbWj63Cw" target="_EVNnJKWpEfCG49UbWj63Cw" editHelperAdviceClassName="fr.cea.nacre.types.advices.EquipementEditHelperAdvice"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Port"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_EVOOM6WpEfCG49UbWj63Cw" identifier="com.example.nacre.Load_Property" name="Load Property" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" matcherConfiguration="_EVOONqWpEfCG49UbWj63Cw">
+    <annotations xmi:type="elementtypesconfigurations:Annotation" xmi:id="_EVOONKWpEfCG49UbWj63Cw" source="org.eclipse.papyrus.uml.profile.types.generator.source" value="platform:/resource/fr.cea.nacre.profile/resources/nacre.profile.uml#_pKMI0I_GEfCQ5Ov1l2eVNA"/>
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_EVOONaWpEfCG49UbWj63Cw" iconPath="/icons/full/obj16/Property.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <ownedConfigurations xmi:type="stereotypematcher:StereotypeMatcherAdviceConfiguration" xmi:id="_EVOONqWpEfCG49UbWj63Cw" description="Apply Stereotype Load" identifier="com.example.nacre.load" target="_EVOOM6WpEfCG49UbWj63Cw" matchedType="_EVOOM6WpEfCG49UbWj63Cw">
+      <stereotypesQualifiedNames>nacre::Load</stereotypesQualifiedNames>
+    </ownedConfigurations>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

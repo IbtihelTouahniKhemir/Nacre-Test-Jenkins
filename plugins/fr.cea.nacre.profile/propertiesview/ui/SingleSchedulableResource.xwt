@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><Group xmlns="http://www.eclipse.org/xwt/presentation" xmlns:j="clr-namespace:java.lang" xmlns:ppe="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets" xmlns:ppel="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets.layout" xmlns:x="http://www.eclipse.org/xwt" text="SchedulableResource">
+            <Group.layout>
+                        <ppel:PropertiesLayout/>
+            </Group.layout>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="1"/>
+                        </Composite.layout>
+                        <ppe:StringEditor input="{Binding}" property="MARTE:MARTE_Foundations:GRM:Resource:resMult"/>
+                        <ppe:StringEditor input="{Binding}" property="MARTE:MARTE_DesignModel:SRM:SW_Concurrency:SwConcurrentResource:type" customLabel="type"/>
+            </Composite>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="2"/>
+                        </Composite.layout>
+                        <ppe:ReferenceDialog input="{Binding}" property="MARTE:MARTE_Foundations:GRM:SchedulableResource:host"/>
+                        <ppe:ReferenceDialog input="{Binding}" property="MARTE:MARTE_Foundations:GRM:SchedulableResource:dependentScheduler"/>
+            </Composite>
+            <Composite>
+                        <Composite.layout>
+                                    <ppel:PropertiesLayout numColumns="1"/>
+                        </Composite.layout>
+                        <ppe:MultiString input="{Binding}" property="MARTE:MARTE_Foundations:GRM:SchedulableResource:schedParams"/>
+            </Composite>
+</Group>

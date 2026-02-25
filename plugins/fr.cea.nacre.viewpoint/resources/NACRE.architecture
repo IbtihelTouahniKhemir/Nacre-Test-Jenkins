@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_26NCoJisEe2V5YxE8lRMvA" id="fr.cea.nacre.fr" name="NACRE" description="RTE DSL to design the Control Architecture of the main grid" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/domain.gif">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_GSn-IJitEe2V5YxE8lRMvA" id="ret_engineer" name="RTE Engineer" description="RTE Engineer reponsible for the Main Grid Control Management" concerns="_Lt2QsJitEe2V5YxE8lRMvA"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_Lt2QsJitEe2V5YxE8lRMvA" id="architecture.control.design" name="Architecture Control Design "/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_64KRsJjHEe2V5YxE8lRMvA" id="fr.cea.nacre.ml" name="NACRE Modeling Langauge" description="NACRE Modeling Langauge" icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/uml.gif" defaultViewpoints="_J4cVYKCcEe2_Fru23X9XoA" creationCommandClass="fr.cea.nacre.viewpoint.CreateNacreModelCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_J4cVYKCcEe2_Fru23X9XoA" id="fr.cea.nacre.viewpoint" name="NACRE" description="NACRE " icon="platform:/plugin/org.eclipse.papyrus.uml.architecture/icons/viewpoint.gif" concerns="_Lt2QsJitEe2V5YxE8lRMvA" representationKinds="_XqVX8KCcEe2_Fru23X9XoA _NXgz8KECEe2_Fru23X9XoA _htsPcKNeEe2bgpIvWHG5sg _0lgdcKNzEe2bgpIvWHG5sg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacre.elementtypesconfigurations#com.example.nacre.elementTypes"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/nacredi.elementtypesconfigurations#_-RXWQKAnEe28YsYjE91TxA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.diagram.composite/model/compositediagram.elementtypesconfigurations#_tL86sLazEeSbnofizoRSMQ"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.diagram.interactionoverview/model/interactionOverviewDiagram.elementtypesconfigurations#_x8G0YGaNEeSyJIsxLao1Pw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.common/model/gmfdiag-common.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.emf/model/infra-emf.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/StandardProfile.elementtypesconfigurations#_jfoLkGT_EeSEqNuV3JpFCA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.diagram.stereotype.edition/model/stereotype-edit.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.infra.types.rulebased/model/rulebased.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types.ui/model/uml-advice.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml-containments.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/MARTE.elementtypesconfigurations#com.example.mARTE.elementTypes"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/fr.cea.nacre.types/resources/MARTEDI.elementtypesconfigurations#_BDy4MKN2Ee2bgpIvWHG5sg"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_XqVX8KCcEe2_Fru23X9XoA" id="fr.cea.nacre.cfamain.diagram" name="CFA MainGrid Diagram" description="CFA MainGrid Diagram" icon="platform:/plugin/org.eclipse.papyrus.uml.diagram.composite/icons/obj16/Diagram_CompositeStructure.gif" concerns="_Lt2QsJitEe2V5YxE8lRMvA" implementationID="CompositeStructure" customStyle="platform:/plugin/fr.cea.nacre.viewpoint/resources/cfa_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_dZYR8VdXEeefxp1AU1LPhQ" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_dZYR8ldXEeefxp1AU1LPhQ" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_dZYR81dXEeefxp1AU1LPhQ" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/fr.cea.nacre.viewpoint/resources/nacre.paletteconfiguration#/"/>
+    </representationKinds>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_NXgz8KECEe2_Fru23X9XoA" id="fr.cea.nacre.cfazone.diagram" name="CFA Zone Diagram" description="Zone Diagram" icon="platform:/plugin/org.eclipse.papyrus.uml.diagram.composite/icons/obj16/Diagram_CompositeStructure.gif" concerns="_Lt2QsJitEe2V5YxE8lRMvA" implementationID="CompositeStructure" customStyle="platform:/plugin/fr.cea.nacre.viewpoint/resources/cfa_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_T-sOQVdZEeefxp1AU1LPhQ" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/nacre#//Zone"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_T-sOQldZEeefxp1AU1LPhQ" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//StructuredClassifier"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://www.eclipse.org/papyrus/nacre#//Zone"/>
+      </owningRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_TYT40FdbEeefxp1AU1LPhQ" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_T-sOQ1dZEeefxp1AU1LPhQ" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/fr.cea.nacre.viewpoint/resources/nacrezone.paletteconfiguration#/"/>
+    </representationKinds>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_htsPcKNeEe2bgpIvWHG5sg" id="fr.cea.nacre.cra.diagram" name="CRA Diagram" description="CRA Diagram" icon="platform:/plugin/org.eclipse.papyrus.uml.diagram.composite/icons/obj16/Diagram_CompositeStructure.gif" concerns="_Lt2QsJitEe2V5YxE8lRMvA" implementationID="CompositeStructure" customStyle="platform:/plugin/fr.cea.nacre.viewpoint/resources/cra_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_s9mQ4KNzEe2bgpIvWHG5sg" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_s9mQ4aNzEe2bgpIvWHG5sg" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_s9mQ4qNzEe2bgpIvWHG5sg" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/fr.cea.nacre.viewpoint/resources/cra.paletteconfiguration#/"/>
+    </representationKinds>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_0lgdcKNzEe2bgpIvWHG5sg" id="fr.cea.nacre.cfra.diagram" name="CFRA Diagram" description="CFRA Diagram" icon="platform:/plugin/org.eclipse.papyrus.uml.diagram.composite/icons/obj16/Diagram_CompositeStructure.gif" concerns="_Lt2QsJitEe2V5YxE8lRMvA" implementationID="CompositeStructure" customStyle="platform:/plugin/fr.cea.nacre.viewpoint/resources/cfra_style.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.composite.CreateCompositeDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_0lhEgKNzEe2bgpIvWHG5sg" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_0lhEgaNzEe2bgpIvWHG5sg" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_0lhEgqNzEe2bgpIvWHG5sg" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/fr.cea.nacre.viewpoint/resources/cfra.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/nacre#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes"/>
+    <profiles xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel"/>
+  </contexts>
+</architecture:ArchitectureDomain>

@@ -1,0 +1,179 @@
+{
+  "manifest": {
+    "version": 3,
+    "description": "Use 'gcm_uid' as reference without Matpower-case data",
+    "service": "Modeling zones",
+    "type": "Model"
+  },
+  "study": {
+    "cfa": {
+      "maingrid": {
+        "zones": [
+          {
+            "substations": [
+              {
+                "bus": [
+                  {
+                    "nominalLevel": {
+                      "value": 63,
+                      "unit": "kV"
+                    },
+                    "connected": true,
+                    "generators": [
+                      {
+                        "connected": true,
+                        "localController": {
+                          "name": "Generator1LocalControler",
+                          "uid": "study_CFA_maingrid_Zone1_Substation1_bus_0_gen_1_controller"
+                        },
+                        "activable": true,
+                        "name": "generator1",
+                        "uid": "study_CFA_maingrid_Zone1_Substation1_bus_0_gen_1"
+                      }
+                    ],
+                    "name": "Bus1",
+                    "uid": "study_CFA_maingrid_Zone1_Substation1_bus_0"
+                  }
+                ],
+                "name": "Substation1",
+                "uid": "study_CFA_maingrid_Zone1_Substation1"
+              }
+            ],
+            "zonalController": {
+              "controlBehavior": "ApproximateLinearMPC",
+              "name": "ZonalController1",
+              "uid": "study_CFA_maingrid_Zone1_controller"
+            },
+            "name": "Zone1",
+            "uid": "study_CFA_maingrid_Zone1"
+          }
+        ],
+        "substations": [
+          {
+            "bus": [
+              {
+                "nominalLevel": {
+                  "value": 63,
+                  "unit": "kV"
+                },
+                "connected": true,
+                "generators": [
+                  {
+                    "connected": true,
+                    "localController": {
+                      "name": "Generator1LocalControler",
+                      "uid": "study_CFA_maingrid_Substation1_bus_0_gen_1_controller"
+                    },
+                    "activable": true,
+                    "name": "generator1",
+                    "uid": "study_CFA_maingrid_Substation1_bus_0_gen_1"
+                  }
+                ],
+                "name": "Bus1",
+                "uid": "study_CFA_maingrid_Substation1_bus_0"
+              }
+            ],
+            "name": "Substation1",
+            "uid": "study_CFA_maingrid_Substation1"
+          }
+        ],
+        "centralController": {
+          "name": "CentralController",
+          "uid": "study_CFA_maingrid_controller"
+        },
+        "name": "MainGrid",
+        "uid": "study_CFA_maingrid"
+      },
+      "name": "CFA",
+      "uid": "study_CFA"
+    },
+    "cras": [
+      {
+        "computingResources": [
+          {
+            "communicationMedias": [],
+            "name": "ComputingResource1",
+            "uid": "study_CRA1_CR_ComputingResource1"
+          }
+        ],
+        "softwareResources": [
+          {
+            "computingResources": [],
+            "name": "SR_CentralController",
+            "uid": "study_CRA1_SR_CentralController"
+          },
+          {
+            "computingResources": [
+              "study_CRA1_CR_ComputingResource1"
+            ],
+            "name": "ZonalControlerSwSchedulableResource",
+            "uid": "study_CRA1_SR_ZonalControlerSwSchedulableResource"
+          },
+          {
+            "computingResources": [
+              "study_CRA1_CR_ComputingResource1"
+            ],
+            "name": "Generator1LocalControlerSwSchedulabaleResource",
+            "uid": "study_CRA1_SR_Generator1LocalControlerSwSchedulabaleResource"
+          }
+        ],
+        "name": "CRA1",
+        "uid": "study_CRA1"
+      }
+    ],
+    "cfras": [
+      {
+        "abstractions": [
+          {
+            "function": "study_CFA_maingrid_controller",
+            "resource": "study_CRA1_SR_CentralController"
+          },
+          {
+            "function": "study_CFA_maingrid_Zone1_controller",
+            "resource": "study_CRA1_SR_ZonalControlerSwSchedulableResource"
+          },
+          {
+            "function": "study_CFA_maingrid_Zone1_Substation1_bus_0_gen_1_controller",
+            "resource": "study_CRA1_SR_Generator1LocalControlerSwSchedulabaleResource"
+          }
+        ],
+        "cra": "study_CRA1",
+        "name": "CFRA1",
+        "uid": "study_CFRA1"
+      }
+    ],
+    "hazards": [
+      {
+        "cra": "study_CRA1",
+        "hazards": [
+          {
+            "name": "FailureComputingResource1",
+            "description": "Total Failure applied on ComputingResource ComputingResource1 from 0 to 0",
+            "component": "study_CRA1_CR_ComputingResource1",
+            "period": {
+              "start": 0,
+              "end": 0,
+              "unit": "second"
+            },
+            "percent": 100.0
+          },
+          {
+            "name": "FailureSR_CentralController",
+            "description": "Total Failure applied on SoftwareResource SR_CentralController",
+            "component": "study_CRA1_SR_CentralController",
+            "percent": 100.0
+          },
+          {
+            "name": "FailureAllocate5",
+            "description": "Total Failure applied on the link between ComputingResource1 and Generator1LocalControlerSwSchedulabaleResource",
+            "from": "study_CRA1_SR_Generator1LocalControlerSwSchedulabaleResource",
+            "to": "study_CRA1_CR_ComputingResource1",
+            "percent": 100.0
+          }
+        ]
+      }
+    ],
+    "name": "fr.ceanacre.gcm.test",
+    "uid": "study"
+  }
+}

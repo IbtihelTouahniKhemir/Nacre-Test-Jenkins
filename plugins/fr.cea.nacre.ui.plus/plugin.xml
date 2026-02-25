@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution
+         locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <menu
+            id="org.eclipse.papyrus.nacre.ui.menu"
+            label="NACRE">
+         </menu>
+      </menuContribution>
+      <menuContribution
+         locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup">
+         <menu
+            id="org.eclipse.papyrus.nacre.ui.menu"
+            label="NACRE">
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+      point="org.eclipse.ui.menus">
+      <menuContribution allPopups="false" locationURI="popup:org.eclipse.papyrus.nacre.ui.menu">
+         <command
+            commandId="fr.cea.nacre.ui.plus.handlers.ImportTopologyMMBasedHandler"
+            label="Import Zone Topology"
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="nacre::Zone">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="fr.cea.nacre.ui.plus.handlers.ImportTopologyIIDMBasedHandler"
+               label="Import IIDM file (experimental)"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate>
+                  <adapt
+                        type="org.eclipse.emf.ecore.EObject">
+                     <test
+                           property="org.eclipse.papyrus.uml.stereotype"
+                           value="nacre::Zone">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="MARTE::MARTE_Foundations::GRM::ComputingResource">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard.links"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="nacre::Connect">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard.links"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="MARTE::MARTE_Foundations::Alloc::Allocate">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="MARTE::MARTE_DesignModel::SRM::SW_Concurrency::SwSchedulableResource">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="MARTE::MARTE_Foundations::GRM::CommunicationMedia">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard.links"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="nacre::Link">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.command.applyHazard.line"
+            label="Create / Delete Hazards "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="nacre::Line">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="fr.cea.nacre.ui.command.applyHazard.generator"
+               label="Create / Delete Hazards "
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate>
+                  <adapt
+                        type="org.eclipse.emf.ecore.EObject">
+                     <test
+                           property="org.eclipse.papyrus.uml.stereotype"
+                           value="nacre::Generator">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.plus.handlers.GenerateJSONHandler2"
+            label="Generate GCM File "
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="nacre::MainGrid">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.plus.handlers.ImportTopologyMMBasedHandler"
+            label="Import Main Grid Topology"
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+               <iterate>
+                  <adapt
+                     type="org.eclipse.emf.ecore.EObject">
+                     <test
+                        property="org.eclipse.papyrus.uml.stereotype"
+                        value="nacre::MainGrid">
+                     </test>
+                  </adapt>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+            commandId="fr.cea.nacre.ui.plus.handlers.ReorganizeModelHandler"
+            label="Reorganize Model"
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+            </visibleWhen>
+         </command>
+         <command
+               commandId="fr.cea.nacre.ui.plus.handlers.CopyCRAHandler"
+               label="Copy CRA"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+            </visibleWhen>
+         </command>
+         <menu
+               label="Hazard">
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCentralControllerHandler"
+                  label="Create Hazard on CentralController"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnZonalControllerHandler"
+                  label="Create Hazards on all ZonalControllers"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnRTEHandler"
+                  label="Create Hazards on all RTE Installations"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnBatteryHandler"
+                  label="Create Hazards on all Batteries"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnGeneratorHandler"
+                  label="Create Hazards on all Generators"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCMEHandler"
+                  label="Create Hazards on all Communication Medias"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.emf.ecore.EObject">
+                        <test
+                              property="org.eclipse.papyrus.uml.stereotype"
+                              value="nacre::CRA">
+                        </test>
+                     </adapt>
+                  </iterate>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCREHandler"
+                  label="Create Hazards on all Computing Resources"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.emf.ecore.EObject">
+                        <test
+                              property="org.eclipse.papyrus.uml.stereotype"
+                              value="nacre::CRA">
+                        </test>
+                     </adapt>
+                  </iterate>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnSREHandler"
+                  label="Create Hazards on all Software Resources"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.emf.ecore.EObject">
+                        <test
+                              property="org.eclipse.papyrus.uml.stereotype"
+                              value="nacre::CRA">
+                        </test>
+                     </adapt>
+                  </iterate>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnAllLinkHandler"
+                  label="Create Hazards on all Links"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="fr.cea.nacre.ui.plus.handlers.CleanAllHazardHandler"
+                  label="Clear All Hazards"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.emf.ecore.EObject">
+                        <test
+                              property="org.eclipse.papyrus.uml.stereotype"
+                              value="nacre::CRA">
+                        </test>
+                     </adapt>
+                  </iterate>
+               </visibleWhen>
+            </command>
+         </menu>
+         <command
+               commandId="fr.cea.nacre.ui.plus.handlers.AddConnectLinks"
+               label="Add Connect links"
+               style="push">
+            <visibleWhen
+                  checkEnabled="true">
+            </visibleWhen>
+         </command>
+         <command
+               commandId="fr.cea.nacre.ui.plus.handlers.CreateLineHandler"
+               label="Create lines in the model"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+      point="org.eclipse.ui.commands">
+      <command
+         categoryId="org.eclipse.papyrus.editor.category"
+         description="Apply Hazards"
+         id="fr.cea.nacre.ui.command.applyHazard"
+         name="Create / Delete Hazards ">
+      </command>
+      <command
+         categoryId="org.eclipse.papyrus.editor.category"
+         description="Apply Hazards Links "
+         id="fr.cea.nacre.ui.command.applyHazard.links"
+         name="Apply Hazards Links">
+      </command>
+      <command
+         categoryId="org.eclipse.papyrus.editor.category"
+         description="Generate GCM File"
+         id="fr.cea.nacre.ui.plus.handlers.GenerateJSONHandler2"
+         name="Generate GCM File">
+      </command>
+      <command
+         categoryId="org.eclipse.papyrus.editor.category"
+         description="Import Main Grid Topology"
+         id="fr.cea.nacre.ui.plus.handlers.ImportTopologyMMBasedHandler"
+         name="Import Main Grid Topology">
+      </command>
+      <command
+         categoryId="org.eclipse.papyrus.editor.category"
+         description="Reorganize model"
+         id="fr.cea.nacre.ui.plus.handlers.ReorganizeModelHandler"
+         name="Re-organize model">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Copy CRA"
+            id="fr.cea.nacre.ui.plus.handlers.CopyCRAHandler"
+            name="Copy CRA">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all RTE Installations"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnRTEHandler"
+            name="Create Hazards on all RTE Installations">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all Generators"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnGeneratorHandler"
+            name="Create Hazards on all Generators">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all Batteries"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnBatteryHandler"
+            name="Create Hazards on all Batteries">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all ZonalControllers"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnZonalControllerHandler"
+            name="Create Hazards on all ZonalControllers">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all CentralController"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCentralControllerHandler"
+            name="Create Hazards on all CentralController">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all Communication Medias"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCMEHandler"
+            name="Create Hazards on all Communication Medias">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all Computing Resources"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCREHandler"
+            name="Create Hazards on all Computing Resources">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all Software Resources"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnSREHandler"
+            name="Create Hazards on all Software Resources">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create Hazards on all Links"
+            id="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnAllLinkHandler"
+            name="Create Hazards on all Links">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="remove all Hazards"
+            id="fr.cea.nacre.ui.plus.handlers.CleanAllHazardHandler"
+            name="Clear all Hazards">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Add Connect links"
+            id="fr.cea.nacre.ui.plus.handlers.AddConnectLinks"
+            name="Add Connect links">
+      </command>
+      <command
+            id="fr.cea.nacre.ui.plus.handlers.ImportTopologyIIDMBasedHandler"
+            name="import IDDM file">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create lines"
+            id="fr.cea.nacre.ui.plus.handlers.CreateLineHandler"
+            name="Create lines">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Apply Hazards Line"
+            id="fr.cea.nacre.ui.command.applyHazard.line"
+            name="Apply Hazards Line">
+      </command>
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Apply Hazards Generator"
+            id="fr.cea.nacre.ui.command.applyHazard.generator"
+            name="Apply Hazards Generator">
+      </command>
+   </extension>
+   <extension
+      point="org.eclipse.ui.handlers">
+      <handler
+         class="fr.cea.nacre.ui.plus.handlers.ApplyHazardHandler"
+         commandId="fr.cea.nacre.ui.command.applyHazard">
+      </handler>
+      <handler
+         class="fr.cea.nacre.ui.plus.handlers.ApplyHazardHandler"
+         commandId="fr.cea.nacre.ui.command.applyHazard.links">
+      </handler>
+      <handler
+         class="fr.cea.nacre.ui.plus.handlers.GenerateJSONHandler2"
+         commandId="fr.cea.nacre.ui.plus.handlers.GenerateJSONHandler2">
+         <activeWhen>
+            <and>
+               <with
+                  variable="selection">
+                  <iterate>
+                     <adapt
+                        type="org.eclipse.emf.ecore.EObject">
+                        <instanceof
+                           value="org.eclipse.uml2.uml.Class">
+                        </instanceof>
+                     </adapt>
+                  </iterate>
+               </with>
+               <count
+                  value="1">
+               </count>
+            </and>
+         </activeWhen>
+      </handler>
+      <handler
+         class="fr.cea.nacre.ui.plus.handlers.ImportTopologyMMBasedHandler"
+         commandId="fr.cea.nacre.ui.plus.handlers.ImportTopologyMMBasedHandler">
+         <activeWhen>
+            <and>
+               <with
+                  variable="selection">
+                  <iterate>
+                     <adapt
+                        type="org.eclipse.emf.ecore.EObject">
+                        <instanceof
+                           value="org.eclipse.uml2.uml.Class">
+                        </instanceof>
+                     </adapt>
+                  </iterate>
+               </with>
+               <count
+                  value="1">
+               </count>
+            </and>
+         </activeWhen>
+      </handler>
+      <handler
+         class="fr.cea.nacre.ui.plus.handlers.ReorganizeModelHandler"
+         commandId="fr.cea.nacre.ui.plus.handlers.ReorganizeModelHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.CopyCRAHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.CopyCRAHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnRTEHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnRTEHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.CleanAllHazardHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.CleanAllHazardHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCMHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCMEHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCRHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCREHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnGeneratorHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnGeneratorHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnBatteryHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnBatteryHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnZonalControllerHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnZonalControllerHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCentralControllerHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnCentralControllerHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnAllLinkHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnAllLinkHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnSRHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnSREHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.AddConnectLinks"
+            commandId="fr.cea.nacre.ui.plus.handlers.AddConnectLinks">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardOnSRHandler"
+            commandId="fr.cea.nacre.ui.plus.command1">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ImportTopologyIIDMBasedHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.ImportTopologyIIDMBasedHandler">
+         <activeWhen>
+            <and>
+               <with
+                     variable="selection">
+                  <iterate>
+                     <adapt
+                           type="org.eclipse.emf.ecore.EObject">
+                        <instanceof
+                              value="org.eclipse.uml2.uml.Class">
+                        </instanceof>
+                     </adapt>
+                  </iterate>
+               </with>
+               <count
+                     value="1">
+               </count>
+            </and>
+         </activeWhen>
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.CreateLineHandler"
+            commandId="fr.cea.nacre.ui.plus.handlers.CreateLineHandler">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardHandler"
+            commandId="fr.cea.nacre.ui.command.applyHazard.line">
+      </handler>
+      <handler
+            class="fr.cea.nacre.ui.plus.handlers.ApplyHazardHandler"
+            commandId="fr.cea.nacre.ui.command.applyHazard.generator">
+      </handler>
+   </extension>
+   <extension point="org.eclipse.papyrus.uml.diagram.wizards.templates">
+      <template di_file="resources/templates/NACRE_EMPTY.di"
+         file="resources/templates/NACRE_EMPTY.uml"
+         id="org.eclipse.papyrus.nacre.ui.template.Empty"
+         language="fr.cea.nacre.ml"
+         name="NACRE Example with Empty Model"
+         notation_file="resources/templates/NACRE_EMPTY.notation">
+      </template>
+   </extension>
+
+   <extension
+      point="org.eclipse.ui.newWizards">
+      <!-- <wizard
+            category="org.eclipse.papyrus.wizards.category"
+            class="fr.cea.nacre.wizards.NewModelWizardNACRE"
+            finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+            icon="icons/naza.gif"
+            id="org.eclipse.papyrus.nacre.wizard.createmodel"
+            name="NACRE model"
+            project="true">
+      </wizard> !-->
+      <wizard
+         category="org.eclipse.papyrus.wizards.category"
+         class="fr.cea.nacre.ui.plus.wizards.NewProjectWizardNACRE"
+         finalPerspective="org.eclipse.papyru.infra.core.perspective"
+         icon="icons/naza.gif"
+         id="org.eclipse.papyrus.nacre.wizard.createproject"
+         name="NACRE project"
+         project="true">
+      </wizard>
+   </extension>
+   <extension
+      point="org.eclipse.ui.preferencePages">
+      <page
+         class="fr.cea.nacre.ui.plus.preferences.NacrePreferencePage"
+         id="fr.cea.nacre.ui.plus.preferences"
+         name="NACRE preferences">
+      </page>
+   </extension>
+   <extension
+      point="org.eclipse.core.runtime.preferences">
+      <initializer
+         class="fr.cea.nacre.ui.plus.preferences.NacrePrefInitializer">
+      </initializer>
+   </extension>
+   <extension
+      point="org.eclipse.ui.startup">
+      <startup
+         class="fr.cea.nacre.ui.plus.Activator">
+      </startup>
+   </extension>
+   <extension
+      point="org.eclipse.papyrus.emf.facet.util.emf.core.modeldeclaration">
+      <modeldeclaration
+         file="resources/NacreExporer.custom">
+      </modeldeclaration>
+      <modeldeclaration
+         file="resources/UpwardTracabilityClasses.custom">
+      </modeldeclaration>
+      <modeldeclaration
+         file="resources/DisplayHazard.custom">
+      </modeldeclaration>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintBindings">
+      <binding
+            context="fr.cea.nacre.ui.plus.clientContext">
+         <category
+               ref="fr.cea.nacre.rules.category">
+         </category>
+      </binding>
+      <clientContext
+            default="false"
+            id="fr.cea.nacre.ui.plus.clientContext">
+         <selector
+               class="fr.cea.nacre.ui.plus.verification.ClientSelector">
+         </selector>
+      </clientContext>
+   </extension>
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <category
+            id="fr.cea.nacre.rules.category"
+            mandatory="true"
+            name="NACRE rules validation ">
+      </category>
+      <constraintProvider
+            mode="Batch">
+         <package
+               namespaceUri="http://www.eclipse.org/uml2/5.0.0/UML">
+         </package>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule001_MainGrid"
+                  id="fr.cea.nacre.ui.plus.verification.Rule001_MainGrid"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule001: The main grid shall contain and reference at least a substation or a zone"
+                  severity="INFO"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule001: The main grid shall contain at least a zone or a substation .
+               </message>
+               <description>
+                  Rule001: The main grid shall contain at least a zone or a substation.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule002_MainGrid"
+                  id="fr.cea.nacre.ui.plus.verification.Rule002_MainGrid"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule002: The main shall contain only substation or zone"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule002: The main shall contain only substation or zone
+               </message>
+               <description>
+                  Rule002: The main shall contain only substation or zone
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule003_MainGrid"
+                  id="fr.cea.nacre.ui.plus.verification.Rule003_MainGrid"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule003: the main shall shall reference contained substation or contained zone."
+                  severity="INFO"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule003: the main shall shall reference contained substation or contained zone.
+               </message>
+               <description>
+                  Rule003: the main shall shall reference contained substation or contained zone.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule004_Zone"
+                  id="fr.cea.nacre.ui.plus.verification.Rule004_Zone"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule004: the zone shall be referenced by the main grid."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule004: the zone shall be referenced by the main grid.
+               </message>
+               <description>
+                  Rule004: the zone shall be referenced by the main grid.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule005_Zone"
+                  id="fr.cea.nacre.ui.plus.verification.Rule005_Zone"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule005: The owner of a zone shall be the main grid."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule005: The owner of a zone shall be the main grid.
+               </message>
+               <description>
+                  Rule005: The owner of a zone shall be the main grid.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule006_Zone"
+                  id="fr.cea.nacre.ui.plus.verification.Rule006_Zone"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule006: A zone shall reference at least one substation."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule006: A zone shall reference at least one substation.
+               </message>
+               <description>
+                  Rule006: A zone shall reference at least one substation.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule007_Substation"
+                  id="fr.cea.nacre.ui.plus.verification.Rule007_Substation"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule007: A substation shall be referenced by the main grid or by the zone."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule007: A substation shall be referenced by the main grid or by the zone.
+               </message>
+               <description>
+                  Rule007: A substation shall be referenced by the main grid or by the zone.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule008_Substation"
+                  id="fr.cea.nacre.ui.plus.verification.Rule008_Substation"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule008: A substation shall be contained by the main grid or by the zone."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule008: A substation shall be contained by the main grid or by the zone.
+               </message>
+               <description>
+                  Rule008 A substation shall be contained by the main grid or by the zone.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule009_Zone"
+                  id="fr.cea.nacre.ui.plus.verification.Rule009_Zone"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule009: A zone contain only Substation."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule009: A zone contain only Substation.
+               </message>
+               <description>
+                  Rule009: A zone contain only Substation.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule010_Substation"
+                  id="fr.cea.nacre.ui.plus.verification.Rule010_Substation"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule010: A SubStation shall contain only bus."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule010: A SubStation shall contain only bus.
+               </message>
+               <description>
+                  Rule010: A SubStation shall contain only bus.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule011_Bus"
+                  id="fr.cea.nacre.ui.plus.verification.Rule011_Bus"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule011: A Bus shall be referenced by the substation."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule011: A Bus shall be referenced by the substation.
+               </message>
+               <description>
+                  Rule011: A Bus shall be referenced by the substation.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule012_Bus"
+                  id="fr.cea.nacre.ui.plus.verification.Rule012_Bus"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule012: A Bus shall be contained by the substation"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule012: A Bus shall be contained by the substation
+               </message>
+               <description>
+                  Rule012: A Bus shall be contained by the substation
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule013_Bus"
+                  id="fr.cea.nacre.ui.plus.verification.Rule013_Bus"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule013: A bus shall contain only batteries or generators or RTE Installations."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule013: A bus shall contain only batteries or generators or RTE Installations.
+               </message>
+               <description>
+                  Rule013: A bus shall contain only batteries or generators or RTE Installations.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule014_Equipement"
+                  id="fr.cea.nacre.ui.plus.verification.Rule014_Equipement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule014: An Equipment shall be referenced by the Bus."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Port">
+               </target>
+               <message>
+                  Rule014: An Equipment shall be referenced by the Bus.
+               </message>
+               <description>
+                  Rule014: An Equipment shall be referenced by the Bus.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule015_Equipement"
+                  id="fr.cea.nacre.ui.plus.verification.Rule015_Equipement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule015: An Equipment shall be contained by the Bus."
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Port">
+               </target>
+               <message>
+                  Rule015: An Equipment shall be contained by the Bus.
+               </message>
+               <description>
+                  Rule015: An Equipment shall be contained by the Bus.
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule016_MainGrid"
+                  id="fr.cea.nacre.ui.plus.verification.Rule016_MainGrid"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule016: the maingrid shall reference a central controller"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule016: the maingrid shall reference a central controller
+               </message>
+               <description>
+                  Rule016: the maingrid shall reference a central controller
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule017_CentralController"
+                  id="fr.cea.nacre.ui.plus.verification.Rule017_CentralController"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule017: the central controller shall be referenced by the mainGrid"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule017: the central controller shall be referenced by the mainGrid
+               </message>
+               <description>
+                  Rule017: the central controller shall be referenced by the mainGrid
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule018_CentralController"
+                  id="fr.cea.nacre.ui.plus.verification.Rule018_CentralController"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule018:  the central controller shall be contained in the package controller inside CFA package"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule018:  the central controller shall be contained in the package controller inside CFA package
+               </message>
+               <description>
+                  Rule018:  the central controller shall be contained in the package controller inside CFA package
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule019_SoftwareResourceAllocation"
+                  id="fr.cea.nacre.ui.plus.verification.SoftwareResourceAllocation"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule019: All Software Resources are allocated on (exactly) one Computing Resource"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Rule019: All Software Resources are allocated on (exactly) one Computing Resource
+               </message>
+               <description>
+                  Rule019: All Software Resources are allocated on (exactly) one Computing Resource
+               </description>
+               <target
+                     class="Class">
+               </target>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule020_ComputingResourceAllocation"
+                  id="fr.cea.nacre.ui.plus.verification.ComputingResourceAllocation"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule020: Each Computing Resource has at least one Software Resource allocated"
+                  severity="ERROR"
+                  statusCode="1">
+               <message>
+                  Rule020: Each Computing Resource has at least one Software Resource allocated
+               </message>
+               <description>
+                  Rule020: Each Computing Resource has at least one Software Resource allocated
+               </description>
+               <target
+                     class="Class">
+               </target>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule021_CompResourceLinkToComMedia"
+                  id="fr.cea.nacre.ui.plus.verification.CompResourceLinkToComMedia"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule021: Each Communication Media has at least one Computing Resource connected"
+                  severity="INFO"
+                  statusCode="1">
+               <message>
+                  Rule021: Each Communication Media has at least one Computing Resource connected
+               </message>
+               <description>
+                  Rule021: Each Communication Media has at least one Computing Resource connected
+               </description>
+               <target
+                     class="Class">
+               </target>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule022_AllComMediaCompResource"
+                  id="fr.cea.nacre.ui.plus.verification.AllComMediaCompResource"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule022: All Computing Resources are connected to at least one Communication Media"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule022: All Computing Resources are connected to at least one Communication Media
+               </message>
+               <description>
+                  Rule022: All Computing Resources are connected to at least one Communication Media
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule023_Zone"
+                  id="fr.cea.nacre.ui.plus.verification.Rule023_Zone"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule023: the zone shall be reference a Zonal controler"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule023: the zone shall be reference a Zonal controler
+               </message>
+               <description>
+                  Rule023: the zone shall be reference a Zonal controler
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule024_ZonalController"
+                  id="fr.cea.nacre.ui.plus.verification.Rule024_ZonalController"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule024: the Zonal controller shall be referenced by a Zone"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule024: the Zonal controller shall be referenced by a Zone
+               </message>
+               <description>
+                  Rule024: the Zonal controller shall be referenced by a Zone
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule025_ZonalController"
+                  id="fr.cea.nacre.ui.plus.verification.Rule025_ZonalController"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule025: the zonal controller shall be contained in the package controller inside CFA package"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule025: the zonal controller shall be contained in the package controller inside CFA package
+               </message>
+               <description>
+                  Rule025: the zonal controller shall be contained in the package controller inside CFA package
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule026_Equipement"
+                  id="fr.cea.nacre.ui.plus.verification.Rule026_Equipement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule026: An Equipment shall refernce a local Controller"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule026: An Equipment shall refernce a local Controller
+               </message>
+               <description>
+                  Rule026: An Equipment shall refernce a local Controller
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule027_LocalController"
+                  id="fr.cea.nacre.ui.plus.verification.Rule027_LocalController"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule027: the local controller shall be referenced by an Equipment"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule027: the local controller shall be referenced by an Equipment
+               </message>
+               <description>
+                  Rule027: the local controller shall be referenced by an Equipment
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule028_LocalController"
+                  id="fr.cea.nacre.ui.plus.verification.Rule028_LocalController"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule028: the local controller shall be contained in the package controller inside CFA package"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule028: the local controller shall be contained in the package controller inside CFA package
+               </message>
+               <description>
+                  Rule028: the local controller shall be contained in the package controller inside CFA package
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule029_LocalController_SWResource"
+                  id="fr.cea.nacre.ui.plus.verification.Rule029_LocalController_SWResource"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule029: A controller shall have to be linked to a SWResource"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule029: A controller shall have to be linked to a SWResource
+               </message>
+               <description>
+                  Rule029: A controller shall have to be linked to a SWResource
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule030_Abstraction"
+                  id="fr.cea.nacre.ui.plus.verification.Rule030_Abstraction"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule030: an abstraction can exist only between CentralControler and SwResource, between SwResource and ComputingReseource &lt;&lt;allocate&gt;&gt;, ComputingResource and CommunicationMedia &lt;&lt;Connect&gt;&gt;, between  CommunicationMedia &lt;&lt;Link&gt;&gt;"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Abstraction">
+               </target>
+               <message>
+                  Rule030: an abstraction can exist only between CentralControler and SwResource, between SwResource and ComputingReseource &lt;&lt;allocate&gt;&gt;, ComputingResource and CommunicationMedia &lt;&lt;Connect&gt;&gt;, between  CommunicationMedia &lt;&lt;Link&gt;&gt;
+               </message>
+               <description>
+                  Rule030: an abstraction can exist only between CentralControler and SwResource, between SwResource and ComputingReseource &lt;&lt;allocate&gt;&gt;, ComputingResource and CommunicationMedia &lt;&lt;Connect&gt;&gt;, between  CommunicationMedia &lt;&lt;Link&gt;&gt;
+               </description>
+            </constraint>
+         </constraints>
+         <constraints
+               categories="fr.cea.nacre.rules.category">
+            <constraint
+                  class="fr.cea.nacre.ui.plus.verification.Rule31_SoftwareResourcePeriodSet"
+                  id="fr.cea.nacre.ui.plus.verification.Rule31_SoftwareResourcePeriodSet"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="Rule031: The Activation period should be set for each Software Resource"
+                  severity="ERROR"
+                  statusCode="1">
+               <target
+                     class="Class">
+               </target>
+               <message>
+                  Rule031: The Activation period should be set for each Software Resource;
+               </message>
+               <description>
+                  Rule031: The Activation period should be set for each Software Resource;
+               </description>
+            </constraint>
+         </constraints>
+      </constraintProvider>
+   </extension>
+
+</plugin>

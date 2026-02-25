@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/UID.ecore"
+            class="fr.cea.nacre.model.NACREMM.UID.UIDPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/cra.ecore"
+            class="fr.cea.nacre.model.NACREMM.cra.CraPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/CommonType.ecore"
+            class="fr.cea.nacre.model.NACREMM.CommonType.CommonTypePackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/cfra.ecore"
+            class="fr.cea.nacre.model.NACREMM.cfra.CfraPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/Hazard.ecore"
+            class="fr.cea.nacre.model.NACREMM.Hazard.HazardPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/cfa.ecore"
+            class="fr.cea.nacre.model.NACREMM.cfa.CfaPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///NACREMM/study.ecore"
+            class="fr.cea.nacre.model.NACREMM.study.StudyPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+</plugin>

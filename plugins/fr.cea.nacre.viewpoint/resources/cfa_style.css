@@ -1,0 +1,220 @@
+* {
+	maskLabel: name;
+	elementIcon: false;
+}
+
+Property > Compartment[kind="internalstructure"]{
+    visible:true;
+}
+
+
+Class[appliedStereotypes~="nacre::MainGrid"]{
+	fillColor: #808080;
+	lineColor: black;
+	lineWidth: 2;
+	bold: true; 
+	radiusWidth: 10;
+	radiusHeight: 10;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/maingrid.svg";
+	displayStereotypes: false;
+}
+
+
+
+Class[appliedStereotypes~="nacre::Battery"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+	
+	
+Class[appliedStereotypes~="nacre::Zone"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::Generator"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::RTE_Installation"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::ZonalController"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Property[typeAppliedStereotypes~="Zone"] {
+	fillColor: #A6C198;
+	lineColor: black;
+}
+
+Class[appliedStereotypes~="nacre::LocalController"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::CentralController"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+	
+}	
+Class[appliedStereotypes~="nacre::Substation"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+	
+}
+Class[appliedStereotypes~="nacre::Battery"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/battery.svg";
+	displayStereotypes: false;
+}
+
+
+Class[appliedStereotypes~="nacre::Zone"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/zone.svg";
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::Substation"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/substation.svg";
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::Bus"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/bus.svg";
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::Generator"]{
+	fillColor: #B22222;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/generator.svg";
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::RTE_Installation"]{
+	fillColor: #1E90FF;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/rteinstall.svg";
+	displayStereotypes: false;
+}
+
+Class[appliedStereotypes~="nacre::CentralController"], Class[appliedStereotypes~="nacre::ZonalController"], Class[appliedStereotypes~="nacre::LocalController"] {
+	fillColor: #FFA500;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/controller.svg";
+	displayStereotypes: false;
+}
+
+Abstraction > Label:name {
+	visible: false;
+}
+
+Abstraction > Label:stereotype {
+        visible:true;
+}
+
+Port > Label:name {
+	visible: false;
+}
+
+Port > Label:stereotype {
+        visible: false;
+}
+
+Shape {
+	shapeVisibility: true;
+}
+
+
+Port[appliedStereotypes~="nacre::Generator"]{
+	fillColor: #B22222;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/generator.svg";
+	displayStereotypes: false;
+
+}
+
+Port[appliedStereotypes~="nacre::RTE_Installation"]{
+	fillColor: #1E90FF;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/rteinstall.svg";
+	displayStereotypes: false;
+	
+}
+
+Port[appliedStereotypes~="nacre::Battery"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Port[appliedStereotypes~="nacre::Battery"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/battery.svg";
+	displayStereotypes: false;
+	
+}
+
+Port[appliedStereotypes~="nacre::Generator"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+
+Port[appliedStereotypes~="nacre::RTE_Installation"] > Compartment[kind="symbol"] {
+	visible: true;
+	displayBorder: false;
+	displayStereotypes: false;
+}
+
+Property[typeAppliedStereotypes~="nacre::LocalController"] {
+	fillColor: #FFA500;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/controller.svg";
+	displayStereotypes: false;
+
+}
+
+Property[typeAppliedStereotypes~="nacre::Generator"] {
+	fillColor: #B22222;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/generator.svg";
+	displayStereotypes: false;
+}
+Property[typeAppliedStereotypes~="nacre::RTE_Installation"] {
+	fillColor: #1E90FF;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/rteinstall.svg";
+	displayStereotypes: false;
+	
+}
+
+Property[typeAppliedStereotypes~="nacre::Battery"]{
+	fillColor: #A6C198;
+	lineColor: black;
+	svgFile: "platform:/plugin/fr.cea.nacre.ui.plus/icons/battery.svg";
+	displayStereotypes: false;
+	
+}

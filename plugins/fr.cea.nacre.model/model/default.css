@@ -1,0 +1,43 @@
+Association > Label:sourceMultiplicity {
+	visible:false;
+}
+
+Association > Label:targetRole {
+	visible:false;
+}
+Association > Label:sourceRole {
+	maskLabel: name multiplicity;
+}
+
+Association > Label:targetMultiplicity {
+	visible:false;
+}
+
+Association > Label:name {
+	visible:false;
+}
+Association {
+	routing:Rectilinear ;
+}
+Class > Compartment {
+    visible:false;
+   
+}
+Class > Compartment[kind="attributes"] {
+    visible:true;
+}
+Class{
+	bold:true;
+	lineWidth:2;
+	fillColor:yellow;
+}
+
+Generalization {
+	routing:Rectilinear ;
+}
+
+Enumeration{
+	bold:true;
+	lineWidth:2;
+	fillColor:limegreen;
+}

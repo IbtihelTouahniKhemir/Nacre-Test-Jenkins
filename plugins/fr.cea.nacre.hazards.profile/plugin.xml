@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hazards.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/Hazards"
+            class="hazards.HazardsPackage"
+            genModel="resources/hazards.profile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://HAZARDS_PROFILE/"
+            target="platform:/plugin/fr.cea.nacre.hazards.profile/resources/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://HAZARDS_PROFILE/hazards.profile.uml#_zyEroGsbEe2UgIhxLP1lYw"
+            uri="http://www.eclipse.org/papyrus/Hazards">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="Nacre Hazards "
+            name="Hazards"
+            path="pathmap://HAZARDS_PROFILE/hazards.profile.uml"
+            provider="CEA">
+      </profile>
+   </extension>
+    <extension
+         point="org.eclipse.papyrus.infra.properties.contexts">
+      <context
+            contextModel="propertyView/hazards.ctx">
+      </context>
+   </extension>
+
+</plugin>

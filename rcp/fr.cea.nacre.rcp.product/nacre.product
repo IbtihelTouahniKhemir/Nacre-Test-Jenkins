@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="NACRE" uid="fr.cea.nacre.rcp.product" id="fr.cea.nacre.rcp.product" application="org.eclipse.ui.ide.workbench" version="0.0.1.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
+
+   <aboutInfo>
+      <image path="/fr.cea.nacre.rcp/icons/papyrus_lg.png"/>
+      <text>
+         NACRE
+
+Version: {1}
+Build id: {0}
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-showsplash org.eclipse.papyrus.rcp --launcher.XXMaxPermSize 256m --launcher.defaultAction openFile
+      </programArgs>
+      <vmArgs>-Xms768m -Xmx1024m -XX:+CMSClassUnloadingEnabled -Dosgi.bundlefile.limit=200
+      </vmArgs>
+      <vmArgsMac>-Xdock:icon=../Resources/papyrus.icns -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/fr.cea.nacre.rcp/icons/papyrus16.png" i32="/fr.cea.nacre.rcp/icons/papyrus32.png" i48="/fr.cea.nacre.rcp/icons/papyrus48.png" i64="/fr.cea.nacre.rcp/icons/papyrus64.png" i128="/fr.cea.nacre.rcp/icons/papyrus128.png"/>
+
+   <splash
+      location="fr.cea.nacre.rcp"
+      startupProgressRect="0,330,460,20"
+      startupMessageRect="7,4,445,16"
+      startupForegroundColor="9C9E9F" />
+   <launcher name="NACRE">
+      <linux icon="../fr.cea.nacre.rcp/icons/icon.xpm"/>
+      <macosx icon="../fr.cea.nacre.rcp/icons/papyrus.icns"/>
+      <win useIco="true">
+         <ico path="/fr.cea.nacre.rcp/icons/papyrus.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <license>
+        <url>TBD</url>
+        <text>
+   TBD
+         </text>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.platform"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.epp.mpc"/>
+      <feature id="org.eclipse.rcp.configuration"/>
+      <feature id="fr.cea.nacre.rcp.feature"/>
+      <feature id="org.eclipse.justj.openjdk.hotspot.jre.full"/>
+      <feature id="org.eclipse.papyrus.sdk.feature" installMode="root"/>
+      <feature id="fr.cea.nacre.feature" installMode="root"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.requiredJavaVersion" value="17" />
+      <property name="osgi.instance.area.default" value="@user.home/workspace-papyrus" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

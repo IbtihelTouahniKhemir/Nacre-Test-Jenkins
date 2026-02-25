@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Profile xmi:id="_zyEroGsbEe2UgIhxLP1lYw" name="hazards" URI="" metaclassReference="_KDe7YGsgEe2UgIhxLP1lYw _JVewcGshEe2UgIhxLP1lYw _PE6_gGshEe2UgIhxLP1lYw _qeyzUGskEe2UgIhxLP1lYw _GsnMYAwlEe6vStxnC7qZBw">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_KDe7YGsgEe2UgIhxLP1lYw" alias="Connector">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_JVewcGshEe2UgIhxLP1lYw" alias="Class">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_PE6_gGshEe2UgIhxLP1lYw" alias="Property">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_qeyzUGskEe2UgIhxLP1lYw" alias="Association">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_GsnMYAwlEe6vStxnC7qZBw" alias="Abstraction">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Abstraction"/>
+    </elementImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_z1JNwGsbEe2UgIhxLP1lYw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_z1JNwWsbEe2UgIhxLP1lYw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hjz8wKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6DYKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6qcKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6qcaxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6qcqxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6qc6xIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6qdKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj6qdaxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hj7RgKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_d-4KxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_el8KxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_el8axIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_fNAKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_fNAaxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_fNAqxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_fNA6xIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_fNBKxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q_fNBaxIEe2DZacH1Zh_uQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9_fvoGsgEe2UgIhxLP1lYw" name="CommunicationHazard">
+      <generalization xmi:type="uml:Generalization" xmi:id="__pCVIPnAEe-bK_Hq6hhF3Q" general="_8IHMEPnAEe-bK_Hq6hhF3Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QfguMGshEe2UgIhxLP1lYw" name="base_Class" association="_QfgHIGshEe2UgIhxLP1lYw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QfguMWshEe2UgIhxLP1lYw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MkbmoGtLEe2EY6SxOjE-Cw" name="period" type="_oeEZEGshEe2UgIhxLP1lYw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0Qv88GshEe2UgIhxLP1lYw" name="percent">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <defaultValue xmi:type="uml:LiteralReal" xmi:id="_XCwZEOaaEe6FgMK7C2vSDQ" value="100.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BwvFcWtJEe2EY6SxOjE-Cw" name="base_Property" association="_BwtQQGtJEe2EY6SxOjE-Cw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BwvFcmtJEe2EY6SxOjE-Cw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__44WEA9WEe6u4r2KovhqHQ" name="base_Association" association="_Oq-jUA9VEe6u4r2KovhqHQ">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BXrPUA9XEe6u4r2KovhqHQ" name="base_Abstraction" association="_K7UBcAwlEe6vStxnC7qZBw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Abstraction"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_QfgHIGshEe2UgIhxLP1lYw" name="E_CommunicationHazard_Class1" memberEnd="_QfgHIWshEe2UgIhxLP1lYw _QfguMGshEe2UgIhxLP1lYw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_QfgHIWshEe2UgIhxLP1lYw" name="extension_CommunicationHazard" type="_9_fvoGsgEe2UgIhxLP1lYw" aggregation="composite" association="_QfgHIGshEe2UgIhxLP1lYw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_oeEZEGshEe2UgIhxLP1lYw" name="Period">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qlsM4GshEe2UgIhxLP1lYw" name="start">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tLSWIGshEe2UgIhxLP1lYw" name="end">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_BwtQQGtJEe2EY6SxOjE-Cw" name="E_CommunicationHazard_Property1" memberEnd="_BwvFcGtJEe2EY6SxOjE-Cw _BwvFcWtJEe2EY6SxOjE-Cw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_BwvFcGtJEe2EY6SxOjE-Cw" name="extension_CommunicationHazard" type="_9_fvoGsgEe2UgIhxLP1lYw" aggregation="composite" association="_BwtQQGtJEe2EY6SxOjE-Cw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_K7UBcAwlEe6vStxnC7qZBw" name="E_CommunicationHazard_Abstraction1" memberEnd="_K7UogAwlEe6vStxnC7qZBw _BXrPUA9XEe6u4r2KovhqHQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_K7UogAwlEe6vStxnC7qZBw" name="extension_CommunicationHazard" type="_9_fvoGsgEe2UgIhxLP1lYw" aggregation="composite" association="_K7UBcAwlEe6vStxnC7qZBw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Oq-jUA9VEe6u4r2KovhqHQ" name="E_CommunicationHazard_Association1" memberEnd="_Oq_xcA9VEe6u4r2KovhqHQ __44WEA9WEe6u4r2KovhqHQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Oq_xcA9VEe6u4r2KovhqHQ" name="extension_CommunicationHazard" type="_9_fvoGsgEe2UgIhxLP1lYw" aggregation="composite" association="_Oq-jUA9VEe6u4r2KovhqHQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_yMxkUPnAEe-bK_Hq6hhF3Q" name="LineHazard">
+      <generalization xmi:type="uml:Generalization" xmi:id="_AaXEYPnBEe-bK_Hq6hhF3Q" general="_8IHMEPnAEe-bK_Hq6hhF3Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_K8veAPnBEe-bK_Hq6hhF3Q" name="start">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RDuDUPnBEe-bK_Hq6hhF3Q" name="base_Class" association="_RDrnEPnBEe-bK_Hq6hhF3Q">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RDuDUfnBEe-bK_Hq6hhF3Q"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_8IHMEPnAEe-bK_Hq6hhF3Q" name="AbstractHazard" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DlrJ0PnBEe-bK_Hq6hhF3Q" name="description" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralString" xmi:id="_DlrJ0fnBEe-bK_Hq6hhF3Q" value=""/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DlrJ0vnBEe-bK_Hq6hhF3Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Dls_APnBEe-bK_Hq6hhF3Q" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dls_AfnBEe-bK_Hq6hhF3Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Dlu0MPnBEe-bK_Hq6hhF3Q" name="justification" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralString" xmi:id="_Dlu0MfnBEe-bK_Hq6hhF3Q" value=""/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dlu0MvnBEe-bK_Hq6hhF3Q"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_RDrnEPnBEe-bK_Hq6hhF3Q" name="E_LineHazard_Class35" memberEnd="_RDtcQPnBEe-bK_Hq6hhF3Q _RDuDUPnBEe-bK_Hq6hhF3Q">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_RDtcQPnBEe-bK_Hq6hhF3Q" name="extension_LineHazard" type="_yMxkUPnAEe-bK_Hq6hhF3Q" aggregation="composite" association="_RDrnEPnBEe-bK_Hq6hhF3Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="__OY2oLmFEfChzqwemLtNng" name="GeneratorHazard">
+      <generalization xmi:type="uml:Generalization" xmi:id="_I4lrELmGEfChzqwemLtNng" general="_8IHMEPnAEe-bK_Hq6hhF3Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JmvxkLmGEfChzqwemLtNng" name="base_Class" association="_Jmt8YLmGEfChzqwemLtNng">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JmvxkbmGEfChzqwemLtNng"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LDMhcLmGEfChzqwemLtNng" name="start">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UP6bYL42EfCI6bkjebhwBQ" name="base_Property" association="_UPvcQL42EfCI6bkjebhwBQ">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UP6bYb42EfCI6bkjebhwBQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_Jmt8YLmGEfChzqwemLtNng" name="E_GeneratorHazard_Class37" memberEnd="_JmvKgLmGEfChzqwemLtNng _JmvxkLmGEfChzqwemLtNng">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_JmvKgLmGEfChzqwemLtNng" name="extension_GeneratorHazard" type="__OY2oLmFEfChzqwemLtNng" aggregation="composite" association="_Jmt8YLmGEfChzqwemLtNng"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_UPvcQL42EfCI6bkjebhwBQ" name="E_GeneratorHazard_Property38" memberEnd="_UP50UL42EfCI6bkjebhwBQ _UP6bYL42EfCI6bkjebhwBQ">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_UP50UL42EfCI6bkjebhwBQ" name="extension_GeneratorHazard" type="__OY2oLmFEfChzqwemLtNng" aggregation="composite" association="_UPvcQL42EfCI6bkjebhwBQ"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4agOUGsmEe2UgIhxLP1lYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4ag1YGsmEe2UgIhxLP1lYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Profile>
+  <Ecore:EPackage xmi:id="_5b29oGsmEe2UgIhxLP1lYw" base_Package="_zyEroGsbEe2UgIhxLP1lYw" nsURI="http://www.eclipse.org/papyrus/Hazards"/>
+</xmi:XMI>

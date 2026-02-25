@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.cea.nacre.feature_1.0.0.qualifier.jar" id="fr.cea.nacre.feature" version="1.0.0.qualifier">
+      <category name="fr.cea.nacre.modeler"/>
+   </feature>
+   <!--feature url="features/org.eclipse.papyrus.aas.feature.source_0.8.0.qualifier.jar" id="fr.cea.nacre.feature.source" version="1.0.0.qualifier">
+      <category name="fr.cea.nacre.modeler"/>
+   </feature-->
+   <category-def name="fr.cea.nacre.modeler" label="Nacre Modeler">
+      <description>
+         Nacre Modeler
+      </description>
+   </category-def>
+</site>

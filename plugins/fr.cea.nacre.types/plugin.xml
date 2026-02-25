@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?><plugin>
+         
+   
+   
+   <extension point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+                  
+      
+      <elementTypeSet clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext" path="resources/nacre.elementtypesconfigurations"/>
+               
+   
+   </extension>
+         
+   
+   <extension point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+                  
+      
+      <elementTypeSet clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext" path="resources/nacredi.elementtypesconfigurations">
+      </elementTypeSet>
+               
+   
+   </extension>
+      
+
+   <extension point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+      <elementTypeSet clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext" path="resources/MARTE.elementtypesconfigurations"/>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+      <elementTypeSet
+            clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+            path="resources/MARTEDI.elementtypesconfigurations">
+      </elementTypeSet>
+   </extension>
+</plugin>

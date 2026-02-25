@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "version": 3,
+    "description": "Use 'gcm_uid' as reference without Matpower-case data",
+    "service": "Modeling zones",
+    "type": "Model"
+  },
+  "study": {
+    "cfa": {
+      "maingrid": {
+        "centralController": {
+          "name": "CentralController",
+          "uid": "study_CFA_maingrid_controller"
+        },
+        "name": "MainGrid",
+        "uid": "study_CFA_maingrid"
+      },
+      "name": "CFA",
+      "uid": "study_CFA"
+    },
+    "cras": [
+      {
+        "softwareResources": [
+          {
+            "computingResources": [],
+            "name": "SR_CentralController",
+            "uid": "study_CRA1_SR_CentralController"
+          }
+        ],
+        "name": "CRA1",
+        "uid": "study_CRA1"
+      }
+    ],
+    "cfras": [
+      {
+        "abstractions": [
+          {
+            "function": "study_CFA_maingrid_controller",
+            "resource": "study_CRA1_SR_CentralController"
+          }
+        ],
+        "cra": "study_CRA1",
+        "name": "CFRA1",
+        "uid": "study_CFRA1"
+      }
+    ],
+    "hazards": [],
+    "name": "fr.ceanacre.gcm.test",
+    "uid": "study"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "version": 3,
+    "description": "Use 'gcm_uid' as reference without Matpower-case data",
+    "service": "Modeling zones",
+    "type": "Model"
+  },
+  "study": {
+    "name": "fr.ceanacre.gcm.test",
+    "uid": "study"
+  }
+}

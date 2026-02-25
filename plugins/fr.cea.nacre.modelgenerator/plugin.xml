@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.papyrus.nacre.ui.menu">
+            <command
+            commandId="fr.cea.nacre.modelgenerator.GenerateModelHandler"
+            label="*Generate Model"
+            style="push">
+            <visibleWhen
+               checkEnabled="false">
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Generate model"
+            id="fr.cea.nacre.modelgenerator.GenerateModelHandler"
+            name="*Generate model"
+       >
+         </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+         class="fr.cea.nacre.modelgenerator.GenerateModelHandler"
+         commandId="fr.cea.nacre.modelgenerator.GenerateModelHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="fr.cea.nacre.modelgenerator.Activator">
+      </startup>
+   </extension>
+
+</plugin>
