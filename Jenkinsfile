@@ -52,12 +52,14 @@ pipeline {
             }
         }
 
-        stage('Archive') {
-            steps {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-                echo '✅ Artefacts archivés'
-            }
-        }
+       
+       stage('Debug Files') {
+    steps {
+        bat 'dir /s plugins\\*\\target'
+        bat 'dir /s features\\*\\target'
+    }
+}
+        
     }
 
     post {
