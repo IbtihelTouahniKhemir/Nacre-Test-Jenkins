@@ -14,10 +14,11 @@ variables:
 build:
   stage: build
   script:
-    - mvn clean package
+    - mvn clean verify -DbuildRCP=true -B
+    - ls -R rcp/fr.cea.nacre.rcp.product/target  # debug : vérifier le RCP généré
   artifacts:
     paths:
-      - target/*.jar
+      - rcp/fr.cea.nacre.rcp.product/target/products/*
     expire_in: 1 week
 
 test:
