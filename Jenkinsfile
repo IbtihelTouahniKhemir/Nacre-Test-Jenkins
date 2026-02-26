@@ -37,8 +37,7 @@ pipeline {
 
         stage('Archive') {
     steps {
-        archiveArtifacts artifacts: '**/rcp/target/products/**/*', fingerprint: true
-        echo 'Artefacts RCP archivés'
+        archiveArtifacts artifacts: '**/fr.cea.nacre.rcp.product/target/**/*', fingerprint: true
     }
 }
     }
