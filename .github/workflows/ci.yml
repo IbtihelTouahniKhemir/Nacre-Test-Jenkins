@@ -20,14 +20,17 @@ jobs:
           java-version: '17'
           cache: maven
 
-      - name: Build project
-        run: mvn clean package
+      # Build Maven avec profile buildRCP
+      - name: Build Maven RCP
+        run: mvn clean verify -DbuildRCP=true -B
 
-      - name: Run tests
-        run: mvn test
+      # Optionnel : vérifier ce qui a été généré
+      - name: List RCP output
+        run: ls -R rcp/fr.cea.nacre.rcp.product/target
 
-      - name: Upload artifact
+      # Upload le RCP en tant qu'artefact
+      - name: Upload RCP Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: my-app
-          path: target/*.jar
+          name: RCP-Product
+          path: rcp/fr.cea.nacre.rcp.product/target/products/*
