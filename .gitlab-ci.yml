@@ -19,7 +19,13 @@ build-linux:
   script:
     - apt-get update && apt-get install -y zip
     - mvn clean verify -DbuildRCP=true -Dos=linux -B
-    - zip -r rcp-linux.zip rcp/fr.cea.nacre.rcp.product/target/products/linux-gtk-x86_64/*
+    - |
+      DIR="rcp/fr.cea.nacre.rcp.product/target/products/linux-gtk-x86_64"
+      if [ -d "$DIR" ] && [ "$(ls -A $DIR)" ]; then
+        zip -r rcp-linux.zip "$DIR"
+      else
+        echo "Aucun fichier Linux à zipper."
+      fi
   artifacts:
     paths:
       - rcp-linux.zip
@@ -33,7 +39,13 @@ build-windows:
   script:
     - apt-get update && apt-get install -y zip
     - mvn clean verify -DbuildRCP=true -Dos=win32 -B
-    - zip -r rcp-windows.zip rcp/fr.cea.nacre.rcp.product/target/products/win32-win32-x86_64/*
+    - |
+      DIR="rcp/fr.cea.nacre.rcp.product/target/products/win32-win32-x86_64"
+      if [ -d "$DIR" ] && [ "$(ls -A $DIR)" ]; then
+        zip -r rcp-windows.zip "$DIR"
+      else
+        echo "Aucun fichier Windows à zipper."
+      fi
   artifacts:
     paths:
       - rcp-windows.zip
@@ -47,7 +59,13 @@ build-macos:
   script:
     - apt-get update && apt-get install -y zip
     - mvn clean verify -DbuildRCP=true -Dos=macosx -B
-    - zip -r rcp-macos.zip rcp/fr.cea.nacre.rcp.product/target/products/macosx-cocoa-x86_64/*
+    - |
+      DIR="rcp/fr.cea.nacre.rcp.product/target/products/macosx-cocoa-x86_64"
+      if [ -d "$DIR" ] && [ "$(ls -A $DIR)" ]; then
+        zip -r rcp-macos.zip "$DIR"
+      else
+        echo "Aucun fichier MacOS à zipper."
+      fi
   artifacts:
     paths:
       - rcp-macos.zip
