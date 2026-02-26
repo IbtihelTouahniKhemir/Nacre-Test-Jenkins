@@ -36,11 +36,11 @@ pipeline {
         }
 
         stage('Archive') {
-            steps {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-                echo 'Artefacts archivés'
-            }
-        }
+    steps {
+        archiveArtifacts artifacts: '**/rcp/target/products/**/*', fingerprint: true
+        echo 'Artefacts RCP archivés'
+    }
+}
     }
 
     post {
